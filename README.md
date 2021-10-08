@@ -30,7 +30,7 @@ Relevant ports of the FPGAs:
 ```
 create_clock -period 5.000 -name clk -waveform {0.000 2.500} -add [get_ports clk]
 set_property -dict {PACKAGE_PIN J8 IOSTANDARD LVCMOS33} [get_ports clk]
-
+# The above pin didnt work..............
 # L23 is the push button
 set_property -dict {PACKAGE_PIN L23 IOSTANDARD LVCMOS25} [get_ports reset]
 
