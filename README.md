@@ -18,7 +18,9 @@ traces.
 ![image](https://user-images.githubusercontent.com/69968227/136505278-aae660c9-397a-4c25-84fd-507dcb325878.png)
 ![image](https://user-images.githubusercontent.com/69968227/136505351-400df3ef-f637-4bcb-abe9-0f9977b3ccd0.png)
 
-Relevant ports of the FPGAs:
+Relevant ports of the FPGAs: 
+
+
 ![image](https://user-images.githubusercontent.com/69968227/136505868-284df612-8e33-4907-b8f2-ff7cbb8b35a4.png)
 ![image](https://user-images.githubusercontent.com/69968227/136506905-b44b3257-adab-445b-acb2-3016ce0fb018.png)
 ![image](https://user-images.githubusercontent.com/69968227/136507019-d0b51549-18e8-4235-b356-041545db20c1.png)
