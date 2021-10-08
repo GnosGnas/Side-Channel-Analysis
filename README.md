@@ -6,7 +6,7 @@ The board has Xilinx 28-nm Kintex-7 FPGA device, which enables advanced measurem
 technology. The basic features of SASEBO-GIII are as follows: 
 * 200 mm x 150 mm x 1.6mm, FR-4, eight layers. 
 * Two Xilinx FPGAs 
-  * Cryptographic FPGA: Kintex-7 XC7K160T-1FBGC 
+  * Cryptographic FPGA: Kintex-7 XC7K160T-1FBGC (xc7k160tfbg676-1)
   * Control FPGA: Spartan-6 XC6LX45-2FGG484C 
 * 1 Gigabit DDR3 SDRAM. 
 * External power source supplies the on-board power regulators and the FPGAs with 5.0 V. 
@@ -37,3 +37,6 @@ set_property -dict {PACKAGE_PIN L23 IOSTANDARD LVCMOS25} [get_ports reset]
 # H12 is for LED9
 set_property -dict {PACKAGE_PIN H12 IOSTANDARD LVCMOS25} [get_ports done]
 ```
+
+## AES algo for both encryption and decryption:
+http://www.cs.columbia.edu/~sedwards/classes/2008/4840/reports/AES.pdf
