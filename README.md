@@ -40,3 +40,7 @@ set_property -dict {PACKAGE_PIN H12 IOSTANDARD LVCMOS25} [get_ports done]
 
 ## AES algo for both encryption and decryption:
 http://www.cs.columbia.edu/~sedwards/classes/2008/4840/reports/AES.pdf
+
+## Cheatsheet
+![image](https://user-images.githubusercontent.com/69968227/137715095-c2adbb85-c0c9-4c8b-b8ac-0464e0d76cb2.png)
+
