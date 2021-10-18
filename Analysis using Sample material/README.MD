@@ -1,4 +1,5 @@
 
+ONLY THE IMPORTANT FILES HAVE BEEN INCLUDED HERE AND REST ARE IN THE ZIP FOLDER
 
 Controller.cs:
 - AES is done in both software and hardware
