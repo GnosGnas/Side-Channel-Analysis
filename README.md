@@ -47,7 +47,7 @@ set_property -dict {PACKAGE_PIN P24 IOSTANDARD LVCMOS25} [get_ports gpio2]
 set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS25} [get_ports observe_clock]
 ```
 ## Contents of this repository:
-1. sasebo_giii files provided by the vendor, Sakura, at https://satoh.cs.uec.ac.jp/SAKURA/hardware/SAKURA-X.html
+1. sasebo_giii files provided by the vendor, Sakura, at https://satoh.cs.uec.ac.jp/SAKURA/hardware/SAKURA-X.html -#####yet to add outer.v, readme.md
 2. Differential Power Analysis
 3. Simulation based TVLA for AES implementations
 4. Hardware based TVLA for AES implementations
