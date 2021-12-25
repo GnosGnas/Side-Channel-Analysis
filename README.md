@@ -1,4 +1,4 @@
-# Differential-Power-Analysis
+# Side-Channel-Analysis
 
 ## Overview of SASEBO-GIII Board: 
 The SASEBO-GIII is a successor of SASEBO-GII board, and is for further side-channel attack experimentation. 
@@ -13,8 +13,9 @@ technology. The basic features of SASEBO-GIII are as follows:
 * Shunt resistor is provided to insert on the core VDD line of the cryptographic FPGA for measuring power 
 traces. 
 * The host PC controls and communicates with the board via the USB port. 
+* The FPGA is default programmed with the vendor's Bit file. 
 
-## Specification:
+### Specification:
 ![image](https://user-images.githubusercontent.com/69968227/136505278-aae660c9-397a-4c25-84fd-507dcb325878.png)
 ![image](https://user-images.githubusercontent.com/69968227/136505351-400df3ef-f637-4bcb-abe9-0f9977b3ccd0.png)
 
@@ -26,17 +27,31 @@ Relevant ports of the FPGAs:
 ![image](https://user-images.githubusercontent.com/69968227/136507019-d0b51549-18e8-4235-b356-041545db20c1.png)
 ![image](https://user-images.githubusercontent.com/69968227/136507161-70f0c0dd-2e89-49ea-9d56-5fa113b71583.png)
 
-## Simple constraint file:
+### Simple constraint file:
 ```
-create_clock -period 5.000 -name clk -waveform {0.000 2.500} -add [get_ports clk]
-set_property -dict {PACKAGE_PIN J8 IOSTANDARD LVCMOS33} [get_ports clk]
-# The above pin didnt work..............
-# L23 is the push button
-set_property -dict {PACKAGE_PIN L23 IOSTANDARD LVCMOS25} [get_ports reset]
+# clock frequency and duty need not be set here. Instead they need to be set in clk_wiz with the input frequency being 200Mhz
+set_property -dict {PACKAGE_PIN AA3 IOSTANDARD LVDS} [get_ports CLK_P] 
+set_property -dict {PACKAGE_PIN AA2 IOSTANDARD LVDS} [get_ports CLK_N]
+set_property -dict {PACKAGE_PIN L23 IOSTANDARD LVCMOS25} [get_ports RST_N]
+# The reset switch is labelled as SW4. The other switch SW2 will reset the FPGA's configuration.
 
-# H12 is for LED9
-set_property -dict {PACKAGE_PIN H12 IOSTANDARD LVCMOS25} [get_ports done]
+set_property BITSTREAM.General.UnconstrainedPins {Allow} [current_design]
+#role of the previous one is not clear
+
+# CN8.1 - D19    CN8.2 - N17   CN8.3 - N16  CN8.4 - P24   CN8.5 - E23  || These are the connector pins
+set_property -dict {PACKAGE_PIN E23 IOSTANDARD LVCMOS25} [get_ports gpio0]
+set_property -dict {PACKAGE_PIN N17 IOSTANDARD LVCMOS25} [get_ports gpio1]
+set_property -dict {PACKAGE_PIN P24 IOSTANDARD LVCMOS25} [get_ports gpio2]
+
+#Clock Reference Pin
+set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS25} [get_ports observe_clock]
 ```
+## Contents of this repository:
+1. sasebo_giii files provided by the vendor, Sakura, at https://satoh.cs.uec.ac.jp/SAKURA/hardware/SAKURA-X.html
+2. Differential Power Analysis
+3. Simulation based TVLA for AES implementations
+4. Hardware based TVLA for AES implementations
+
 
 ## AES algo for both encryption and decryption:
 http://www.cs.columbia.edu/~sedwards/classes/2008/4840/reports/AES.pdf
