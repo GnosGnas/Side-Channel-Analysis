@@ -35,11 +35,10 @@ The reasons for its popularity are as follows:
 
 TVLA uses Welch's t-test, a PASS/FAIL test that checks if t-value crosses a predefined threshold (proposed as ±4.5).It is to be noted that this is not sufficient to objectively tell that the device leaks data, which can
 be confirmed only by performing side-channel attacks. More details can be found in the report.  
-T-value is given by, $$t=\frac{\mu_A - \mu_B}{\sqrt{\frac{\sigma_A^{2}}{n_A}+\frac{\sigma_B^{2}}{n_B}}}.$$
+T-value is given by, $t=\frac{\mu_A - \mu_B}{\sqrt{\frac{\sigma_A^{2}}{n_A}+\frac{\sigma_B^{2}}{n_B}}}.$  
 where A and B correspond to the fixed and random dataset.
 
 ## 
-
 
 
 
