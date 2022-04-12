@@ -1,5 +1,5 @@
 # Side-Channel-Analysis
-####// More updates yet to be added
+####// More updates to be added
 
 ## Overview of SASEBO-GIII Board: 
 The SASEBO-GIII is a successor of SASEBO-GII board, and is for further side-channel attack experimentation. 
