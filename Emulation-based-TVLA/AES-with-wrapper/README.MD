@@ -11,7 +11,7 @@ Side-channel attacks started becoming more viable as compared to exhaustive sear
 
 TVLA aims to provide detection of information leakage using statistical analysis. The aim of this project is to evaluate the vulnerability of Shakti's AES accelerators which can be integrated with the Shakti C-Class processor.
 
-////ADD image here for TVLA
+![TVLA_flow](https://user-images.githubusercontent.com/69968227/162927322-a7de09bd-0b09-4ebb-ab7c-b41726e1a122.png)
 
 ## Side-channel evaluation methodology
 The procedure followed here is for non-specific TVLA test on an FPGA.
