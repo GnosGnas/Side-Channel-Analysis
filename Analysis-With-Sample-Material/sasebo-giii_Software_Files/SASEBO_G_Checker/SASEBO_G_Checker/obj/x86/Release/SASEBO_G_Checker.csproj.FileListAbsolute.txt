@@ -1,0 +1,11 @@
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\bin\Release\SASEBO_G_Checker.exe
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\bin\Release\SASEBO_G_Checker.pdb
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\bin\Release\FTD2XX_NET.dll
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\bin\Release\FTD2XX_NET.xml
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Release\SASEBO_G_Checker.Form_Main.resources
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Release\SASEBO_G_Checker.Properties.Resources.resources
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Release\SASEBO_G_Checker.exe
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Release\SASEBO_G_Checker.pdb

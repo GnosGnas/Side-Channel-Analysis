@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="43">
+<DesignStatistics TimeStamp="Tue Nov 30 16:42:53 2021"><group name="NetStatistics">
+<item name="NumNets_Active" rev="43">
+<attrib name="value" value="70"/></item>
+<item name="NumNets_Gnd" rev="43">
+<attrib name="value" value="1"/></item>
+<item name="NumNets_Vcc" rev="43">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_BENTQUAD" rev="43">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_DOUBLE" rev="43">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_GENERIC" rev="43">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_HLONG" rev="43">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_HQUAD" rev="43">
+<attrib name="value" value="7"/></item>
+<item name="NumNodesOfType_Active_IOBIN2OUT" rev="43">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_IOBOUTPUT" rev="43">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_OUTBOUND" rev="43">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_PADINPUT" rev="43">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_PADOUTPUT" rev="43">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_PINFEED" rev="43">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_SINGLE" rev="43">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_VLONG" rev="43">
+<attrib name="value" value="7"/></item>
+<item name="NumNodesOfType_Active_VLONG12" rev="43">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Gnd_BOUNCEACROSS" rev="43">
+<attrib name="value" value="16"/></item>
+<item name="NumNodesOfType_Gnd_BOUNCEIN" rev="43">
+<attrib name="value" value="26"/></item>
+<item name="NumNodesOfType_Gnd_HVCCGNDOUT" rev="43">
+<attrib name="value" value="26"/></item>
+<item name="NumNodesOfType_Gnd_IOBIN2OUT" rev="43">
+<attrib name="value" value="26"/></item>
+<item name="NumNodesOfType_Gnd_IOBOUTPUT" rev="43">
+<attrib name="value" value="26"/></item>
+<item name="NumNodesOfType_Gnd_PADINPUT" rev="43">
+<attrib name="value" value="26"/></item>
+<item name="NumNodesOfType_Gnd_PINBOUNCE" rev="43">
+<attrib name="value" value="16"/></item>
+<item name="NumNodesOfType_Gnd_PINFEED" rev="43">
+<attrib name="value" value="26"/></item>
+<item name="NumNodesOfType_Vcc_HVCCGNDOUT" rev="43">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Vcc_IOBIN2OUT" rev="43">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Vcc_IOBOUTPUT" rev="43">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Vcc_PADINPUT" rev="43">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Vcc_PINFEED" rev="43">
+<attrib name="value" value="3"/></item>
+</group>
+<group name="SiteStatistics">
+<item name="IOB-IOB18M" rev="43">
+<attrib name="value" value="20"/></item>
+<item name="IOB33-IOB33M" rev="43">
+<attrib name="value" value="22"/></item>
+<item name="IOB33-IOB33S" rev="43">
+<attrib name="value" value="5"/></item>
+</group>
+<group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="42">
+<attrib name="value" value="50"/></item>
+<item name="AGG_IO" rev="42">
+<attrib name="value" value="50"/></item>
+<item name="AGG_LOCED_IO" rev="42">
+<attrib name="value" value="50"/></item>
+<item name="NUM_BONDED_IOB" rev="42">
+<attrib name="value" value="20"/></item>
+<item name="NUM_BONDED_IOB33" rev="42">
+<attrib name="value" value="30"/></item>
+<item name="NUM_LOCED_IOB" rev="42">
+<attrib name="value" value="20"/></item>
+<item name="NUM_LOCED_IOB33" rev="42">
+<attrib name="value" value="30"/></item>
+</group>
+</DesignStatistics>
+<DeviceUsage TimeStamp="Tue Nov 30 16:42:53 2021"><group name="SiteSummary">
+<item name="HARD0" rev="43">
+<attrib name="total" value="1000000"/><attrib name="used" value="4"/></item>
+<item name="IOB" rev="43">
+<attrib name="total" value="1000000"/><attrib name="used" value="20"/></item>
+<item name="IOB33" rev="43">
+<attrib name="total" value="1000000"/><attrib name="used" value="30"/></item>
+<item name="IOB33_INBUF_EN" rev="43">
+<attrib name="total" value="1000000"/><attrib name="used" value="16"/></item>
+<item name="IOB33_OUTBUF" rev="43">
+<attrib name="total" value="1000000"/><attrib name="used" value="14"/></item>
+<item name="IOB_INBUF_EN" rev="43">
+<attrib name="total" value="1000000"/><attrib name="used" value="4"/></item>
+<item name="IOB_OUTBUF" rev="43">
+<attrib name="total" value="1000000"/><attrib name="used" value="16"/></item>
+<item name="PAD" rev="43">
+<attrib name="total" value="1000000"/><attrib name="used" value="50"/></item>
+</group>
+</DeviceUsage>
+<ReportConfigData TimeStamp="Tue Nov 30 16:42:53 2021"><group name="IOB_INBUF_EN">
+<item name="IBUF_LOW_PWR" rev="43">
+<attrib name="TRUE" value="4"/></item>
+</group>
+<group name="IOB33_INBUF_EN">
+<item name="IBUF_LOW_PWR" rev="43">
+<attrib name="TRUE" value="16"/></item>
+</group>
+</ReportConfigData>
+<ReportPinData TimeStamp="Tue Nov 30 16:42:53 2021"><group name="IOB33_OUTBUF">
+<item name="IN" rev="43">
+<attrib name="value" value="14"/></item>
+<item name="OUT" rev="43">
+<attrib name="value" value="14"/></item>
+</group>
+<group name="IOB_OUTBUF">
+<item name="IN" rev="43">
+<attrib name="value" value="16"/></item>
+<item name="OUT" rev="43">
+<attrib name="value" value="16"/></item>
+</group>
+<group name="IOB_INBUF_EN">
+<item name="INTERMDISABLE" rev="43">
+<attrib name="value" value="4"/></item>
+<item name="OUT" rev="43">
+<attrib name="value" value="4"/></item>
+<item name="PAD" rev="43">
+<attrib name="value" value="4"/></item>
+</group>
+<group name="PAD">
+<item name="PAD" rev="43">
+<attrib name="value" value="50"/></item>
+</group>
+<group name="IOB33_INBUF_EN">
+<item name="OUT" rev="43">
+<attrib name="value" value="16"/></item>
+<item name="PAD" rev="43">
+<attrib name="value" value="16"/></item>
+</group>
+<group name="IOB33">
+<item name="I" rev="43">
+<attrib name="value" value="16"/></item>
+<item name="O" rev="43">
+<attrib name="value" value="14"/></item>
+<item name="PAD" rev="43">
+<attrib name="value" value="30"/></item>
+</group>
+<group name="IOB">
+<item name="I" rev="43">
+<attrib name="value" value="4"/></item>
+<item name="O" rev="43">
+<attrib name="value" value="16"/></item>
+<item name="PAD" rev="43">
+<attrib name="value" value="20"/></item>
+</group>
+<group name="HARD0">
+<item name="0" rev="43">
+<attrib name="value" value="4"/></item>
+</group>
+</ReportPinData>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

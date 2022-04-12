@@ -1,0 +1,140 @@
+xst -intstyle ise -ifn "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii/sasebo_giii_aes/pin_sasebo_giii_k7.ucf" -p xc7k160t-fbg676-1 "CHIP_SASEBO_GIII_AES.ngc" CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+xst -intstyle ise -ifn "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii/sasebo_giii_aes/pin_sasebo_giii_k7.ucf" -p xc7k160t-fbg676-1 "CHIP_SASEBO_GIII_AES.ngc" CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+xst -intstyle ise -ifn "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii/sasebo_giii_aes/pin_sasebo_giii_k7.ucf" -p xc7k160t-fbg676-1 "CHIP_SASEBO_GIII_AES.ngc" CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii/sasebo_giii_aes/pin_sasebo_giii_k7.ucf" -p xc7k160t-fbg676-1 "CHIP_SASEBO_GIII_AES.ngc" CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii_modified/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii_modified/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+xst -intstyle ise -ifn "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii_modified/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii_modified/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii_modified/sasebo_giii_aes/pin_sasebo_giii_k7.ucf" -p xc7k160t-fbg676-1 "CHIP_SASEBO_GIII_AES.ngc" CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii_modified/sasebo_giii_aes/pin_sasebo_giii_k7.ucf" -p xc7k160t-fbg676-1 "CHIP_SASEBO_GIII_AES.ngc" CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii_modified/sasebo_giii_aes/pin_sasebo_giii_k7.ucf" -p xc7k160t-fbg676-1 "CHIP_SASEBO_GIII_AES.ngc" CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "C:/Users/netlab/Google Drive/Arsath_PC/sasebo_giii_modified/sasebo_giii_aes/pin_sasebo_giii_k7.ucf" -p xc7k160t-fbg676-1 "CHIP_SASEBO_GIII_AES.ngc" CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 
+xst -intstyle ise -ifn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.xst" -ofn "C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/sasebo_giii_aes/CHIP_SASEBO_GIII_AES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/DPA_verilog/surya/sasebo_giii_modified_surya/sasebo_giii_aes/pin_sasebo_giii_k7.ucf -p xc7k160t-fbg676-1 CHIP_SASEBO_GIII_AES.ngc CHIP_SASEBO_GIII_AES.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ngd CHIP_SASEBO_GIII_AES.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SASEBO_GIII_AES_map.ncd CHIP_SASEBO_GIII_AES.ncd CHIP_SASEBO_GIII_AES.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CHIP_SASEBO_GIII_AES.twx CHIP_SASEBO_GIII_AES.ncd -o CHIP_SASEBO_GIII_AES.twr CHIP_SASEBO_GIII_AES.pcf 
+bitgen -intstyle ise -f CHIP_SASEBO_GIII_AES.ut CHIP_SASEBO_GIII_AES.ncd 

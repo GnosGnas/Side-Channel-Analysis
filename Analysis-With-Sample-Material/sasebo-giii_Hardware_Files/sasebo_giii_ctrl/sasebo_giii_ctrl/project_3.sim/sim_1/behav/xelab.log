@@ -1,0 +1,10 @@
+Vivado Simulator 2012.3
+Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/14.3/ISE_DS/PlanAhead/bin/unwrapped/win32.o/xelab.exe --incremental --debug typical --O2 --relax --mt auto -L work -L unisims_ver -L unimacro_ver -L xilinxcorelib_ver -L secureip --snapshot unknown_behav --prj C:/Arsath/sasebo_giii/sasebo_giii_aes/sasebo_giii_aes/project_1.sim/sim_1/behav/unknown.prj work.unknown work.glbl 
+Multi-threading in on. Using 7 slave threads
+Determining compilation order of HDL files
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Arsath/sasebo_giii/sasebo_giii_aes/aes_composite_enc.v" into library work
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Arsath/sasebo_giii/sasebo_giii_aes/chip_sasebo_giii_aes.v" into library work
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Arsath/sasebo_giii/sasebo_giii_aes/lbus_if.v" into library work
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/14.3/ISE_DS/PlanAhead/data/verilog/src/glbl.v" into library work
+ERROR: [XSIM 43-3225] Can not find design unit work.unknown in library work located at xsim.dir/work 

@@ -1,0 +1,75 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version O-2018.06-SP5-4 for linux64 - Jul 24, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+# things to do
+# create folder for each benchmark circuit let it be ckt1
+# inside ckt1 create folder called reports
+# copy these three files .synopsys_dc_130.setup, synth.tcl & block.sdc * Note: verilog file also should be inside ckt1
+# rename aes_128 to the name of the random verilog file that is created
+# synthesize once with clock at 0 in block.sdc & max_delay 0.0 note the delay value in modulename_timing.txt
+# replace clock with magnitude value and set period accordingly and max_delay to the same value and resynthesize
+# run using the following command  1. source /tools/setup.sh 2. dc_shell -f synth.tcl
+remove_design -all
+1
+#removes any previous loaded designs
+source .synopsys_dc_130.setup
+#loads the gate-level models
+set myFiles [list verilog_files/mkAES.v verilog_files/mkRconRom.v verilog_files/mkSbox2.v verilog_files/mkAES_Wrapper2.v verilog_files/BRAM1.v]; # replace with verilog files that you want to synthesize
+verilog_files/mkAES.v verilog_files/mkRconRom.v verilog_files/mkSbox2.v verilog_files/mkAES_Wrapper2.v verilog_files/BRAM1.v
+set myTop mkAES_Wrapper2; # check the name of the module in the verilog file that you are synthesizing and replace it here
+mkAES_Wrapper2
+analyze -library WORK -format verilog ${myFiles} > reports/aes_report.txt
+#rename aes_128 to file that you are synthesizing
+elaborate ${myTop} -architecture verilog -library DEFAULT >> reports/aes_report.txt
+#rename aes_128 to file that you are synthesizing
+current_design ${myTop} >> reports/aes_report.txt
+link
+
+  Linking design 'mkAES_Wrapper2'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (5 designs)               /home/surya/AES/final/mkAES_Wrapper2.db, etc
+  gscl45nm (library)          /home/surya/gscl45nm.db
+
+1
+source ./block.sdc
+1
+ungroup -all -flatten
+Information: Updating graph... (UID-83)
+Warning: Design 'mkAES_Wrapper2' contains 7 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+1
+set_max_area 0
+1
+set_max_delay 0.0 -from [all_inputs] -to [all_outputs]
+1
+compile_ultra > reports/aes_compile.txt
+report_cell > reports/aes_cell.txt
+report_area > reports/aes_area.txt
+report_timing > reports/aes_timing.txt
+report_power > reports/aes_power.txt
+write -hierarchy -format verilog -output mkAES_Wrapper2_synthesized.v > reports/aes_write_report.txt
+write_sdc aes.sdc > reports/aes_sdc_report.txt
+write_parasitics -format reduced aes.spef > reports/aes_spef.txt
+Error: Errors detected during redirect
+	Use error_info for more info. (CMD-013)
+exit
+
+Thank you...

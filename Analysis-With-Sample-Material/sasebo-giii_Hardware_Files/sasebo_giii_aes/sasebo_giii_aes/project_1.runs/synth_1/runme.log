@@ -1,0 +1,40 @@
+
+*** Running vivado
+    with args -log CHIP_SASEBO_GIII_AES.rds -m32 -mode batch -messageDb vivado.pb -source CHIP_SASEBO_GIII_AES.tcl
+
+
+****** Vivado v2012.3
+  **** Build 209282 by xbuild on Thu Oct 18 20:54:02 MDT 2012
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+WARNING: [Vivado 15-2] No 'Implementation' license found.
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source CHIP_SASEBO_GIII_AES.tcl
+# create_project -in_memory
+# set_property part xc7k160tfbg676-1 [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property constrs_type UCF [current_fileset -constrset]
+# read_verilog {
+#   C:/Arsath/sasebo_giii/sasebo_giii_aes/aes_composite_enc.v
+#   C:/Arsath/sasebo_giii/sasebo_giii_aes/chip_sasebo_giii_aes.v
+#   C:/Arsath/sasebo_giii/sasebo_giii_aes/lbus_if.v
+# }
+# set_property webtalk.parent_dir C:/Arsath/sasebo_giii/sasebo_giii_aes/sasebo_giii_aes/project_1.data/wt [current_project]
+# set_property parent.project_dir C:/Arsath/sasebo_giii/sasebo_giii_aes/sasebo_giii_aes [current_project]
+# synth_design -top CHIP_SASEBO_GIII_AES -part xc7k160tfbg676-1
+
+Starting synthesis...
+
+INFO: [Common 17-347] Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-347] Attempting to get a license for feature 'Rodin_Synthesis' and/or device 'xc7k160t'
+WARNING: [Common 17-348] Failed to get the license for feature 'Rodin_Synthesis' and/or device 'xc7k160t'
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xc7k160t'. Please run the Xilinx License Configuration Manager for assistance in determining
+which features and devices are licensed for your system.
+
+    while executing
+"synth_design -top CHIP_SASEBO_GIII_AES -part xc7k160tfbg676-1"
+    (file "CHIP_SASEBO_GIII_AES.tcl" line 16)
+INFO: [Common 17-206] Exiting Vivado at Wed May 24 12:00:56 2017...

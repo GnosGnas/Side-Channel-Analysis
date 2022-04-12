@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Apr 10 09:41:03 2022
+# Process ID: 15512
+# Current directory: /home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.runs/impl_1
+# Command line: vivado -log Top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Top.tcl -notrace
+# Log file: /home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.runs/impl_1/Top.vdi
+# Journal file: /home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace

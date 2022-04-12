@@ -1,0 +1,3 @@
+Writing verilog file '/home/surya/AES/final/mkAES_synthesized.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1

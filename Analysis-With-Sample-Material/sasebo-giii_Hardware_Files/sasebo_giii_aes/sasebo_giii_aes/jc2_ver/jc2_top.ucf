@@ -1,0 +1,33 @@
+// UCF file for jc2_top in XC9572XL-CS48
+NET left LOC=G7;
+NET right LOC=B2;
+NET stop LOC=F2;
+NET clk LOC=A7;
+
+
+#Use the apporpriate section below based on the 
+#synthesis tool to be used.
+
+#**********************************************
+# For XST
+
+NET q<0> LOC=B4;
+NET q<1> LOC=C6;
+NET q<2> LOC=F6;
+NET q<3> LOC=G5;
+
+#**********************************************
+# For Synplify / Synplify Pro 
+
+#NET q[0] LOC=B4;
+#NET q[1] LOC=C6;
+#NET q[2] LOC=F6;
+#NET q[3] LOC=G5;
+
+#**********************************************
+# For Precision
+
+#NET q(0) LOC=B4;
+#NET q(1) LOC=C6;
+#NET q(2) LOC=F6;
+#NET q(3) LOC=G5;

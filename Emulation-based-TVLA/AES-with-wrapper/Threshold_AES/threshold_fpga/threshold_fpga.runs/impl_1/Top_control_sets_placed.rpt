@@ -1,0 +1,134 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Sat Apr  9 17:36:03 2022
+| Host         : surya-Legion running 64-bit Ubuntu 20.04.4 LTS
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7k160t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    56 |
+|    Minimum number of control sets                        |    56 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    54 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    56 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |    24 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    27 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               6 |            4 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              43 |           21 |
+| Yes          | No                    | No                     |            1408 |          361 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1497 |          528 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+--------------------------------------------------+---------------------------------+------------------+----------------+--------------+
+|    Clock Signal   |                   Enable Signal                  |         Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------+--------------------------------------------------+---------------------------------+------------------+----------------+--------------+
+|  cl/inst/clk_out1 | M/done_reg$EN                                    | M/aes__dr_sb/p_0_in__0          |                1 |              1 |         1.00 |
+|  cl/inst/clk_out1 | M/aes__dr_rg_state$EN                            | M/aes__dr_sb/p_0_in__0          |                2 |              4 |         2.00 |
+|  cl/inst/clk_out1 | M/aes__kg_rci$EN                                 | M/aes__kg_rci[3]_i_1_n_0        |                1 |              4 |         4.00 |
+|  cl/inst/clk_out1 |                                                  |                                 |                4 |              6 |         1.50 |
+|  cl/inst/clk_out1 | M/aes__dr_counter$EN                             | M/aes__dr_counter[0]            |                3 |              7 |         2.33 |
+|  cl/inst/clk_out1 | M/aes__dr_col3[7]_i_1_n_0                        | M/aes__dr_sb/p_0_in__0          |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes__dr_col0[7]_i_1_n_0                        | M/aes__dr_sb/p_0_in__0          |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes__dr_col3[15]_i_1_n_0                       | M/aes__dr_sb/p_0_in__0          |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes__dr_col2[7]_i_1_n_0                        | M/aes__dr_sb/p_0_in__0          |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes__dr_col1[7]_i_1_n_0                        | M/aes__dr_sb/p_0_in__0          |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes__dr_col0[23]_i_1_n_0                       | M/aes__dr_sb/p_0_in__0          |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes__dr_col0[15]_i_1_n_0                       | M/aes__dr_sb/p_0_in__0          |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes__kg_sbox_out$EN                            | M/aes__dr_sb/p_0_in__0          |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes__dr_rg_state$D_IN[0]                       | M/aes__dr_sb/p_0_in__0          |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes__kg_last_col_sub_rot[7]                    | M/aes__dr_sb/p_0_in__0          |                1 |              8 |         8.00 |
+|  cl/inst/clk_out1 | M/aes__kg_last_col_sub_rot[15]                   | M/aes__dr_sb/p_0_in__0          |                1 |              8 |         8.00 |
+|  cl/inst/clk_out1 | M/aes__kg_last_col_sub_rot[23]                   | M/aes__dr_sb/p_0_in__0          |                2 |              8 |         4.00 |
+|  cl/inst/clk_out1 | M/aes__kg_last_col_sub_rot[31]                   | M/aes__dr_sb/p_0_in__0          |                2 |              8 |         4.00 |
+|  cl/inst/clk_out1 | M/aes__kg_rg_state[0]                            | M/aes__dr_sb/p_0_in__0          |                2 |              8 |         4.00 |
+|  cl/inst/clk_out1 | M/aes__dr_col2[23]_i_1_n_0                       | M/aes__dr_sb/p_0_in__0          |                2 |              8 |         4.00 |
+|  cl/inst/clk_out1 | M/aes__dr_col2[31]_i_1_n_0                       | M/aes__dr_sb/p_0_in__0          |                2 |              8 |         4.00 |
+|  cl/inst/clk_out1 | M/aes__dr_col3[23]_i_1_n_0                       | M/aes__dr_sb/p_0_in__0          |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes__dr_i_sbox_out$EN                          | M/aes__dr_sb/p_0_in__0          |                4 |              8 |         2.00 |
+|  cl/inst/clk_out1 | M/aes__dr_sbox_out$EN                            | M/aes__dr_sb/p_0_in__0          |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes__dr_col2[15]_i_1_n_0                       | M/aes__dr_sb/p_0_in__0          |                2 |              8 |         4.00 |
+|  cl/inst/clk_out1 | M/aes__dr_col1[31]_i_1_n_0                       | M/aes__dr_sb/p_0_in__0          |                2 |              8 |         4.00 |
+|  cl/inst/clk_out1 | M/aes__dr_col1[23]_i_1_n_0                       | M/aes__dr_sb/p_0_in__0          |                2 |              8 |         4.00 |
+|  cl/inst/clk_out1 | M/aes__dr_col1[15]_i_1_n_0                       | M/aes__dr_sb/p_0_in__0          |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes__dr_col0[31]_i_1_n_0                       | M/aes__dr_sb/p_0_in__0          |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes__kg_sbox_out$D_IN2                         | M/aes__dr_sb/p_0_in__0          |               10 |             24 |         2.40 |
+|  cl/inst/clk_out1 | M/delayer$EN                                     | M/delayer[31]_i_1_n_0           |                9 |             31 |         3.44 |
+|  cl/inst/clk_out1 | M/MUX_delayer$write_1__SEL_2                     | M/input_text[127]_i_1_n_0       |                8 |             32 |         4.00 |
+|  cl/inst/clk_out1 |                                                  | M/aes__dr_sb/p_0_in__0          |               21 |             43 |         2.05 |
+|  cl/inst/clk_out1 | M/aes__dr_isb/lfsr_1_r$EN                        | M/aes__dr_sb/p_0_in__0          |                9 |             60 |         6.67 |
+|  cl/inst/clk_out1 | M/aes__dr_sb/lfsr_1_r[15]_i_1_n_0                | M/aes__dr_sb/p_0_in__0          |               11 |             60 |         5.45 |
+|  cl/inst/clk_out1 | M/aes__kg_sbox_threshold/lfsr_1_r[15]_i_1__0_n_0 | M/aes__dr_sb/p_0_in__0          |               10 |             60 |         6.00 |
+|  cl/inst/clk_out1 | M/aes__kg_prev_key0$EN                           | M/aes__kg_prev_key2[31]_i_1_n_0 |               15 |             63 |         4.20 |
+|  cl/inst/clk_out1 | M/aes__kg_prev_key0$EN                           | M/aes__dr_sb/p_0_in__0          |               16 |             68 |         4.25 |
+|  cl/inst/clk_out1 | M/aes__dr_col0mix$EN                             | M/aes__dr_sb/p_0_in__0          |               51 |            120 |         2.35 |
+|  cl/inst/clk_out1 | M/aes__col0$EN                                   | M/aes__dr_sb/p_0_in__0          |               50 |            128 |         2.56 |
+|  cl/inst/clk_out1 | M/aes__kg_save_key3_10[31]_i_1_n_0               |                                 |               22 |            128 |         5.82 |
+|  cl/inst/clk_out1 | M/aes__kg_save_key3_1[31]_i_1_n_0                |                                 |               25 |            128 |         5.12 |
+|  cl/inst/clk_out1 | M/aes__kg_save_key3_2[31]_i_1_n_0                |                                 |               26 |            128 |         4.92 |
+|  cl/inst/clk_out1 | M/aes__key$EN                                    | M/aes__dr_sb/p_0_in__0          |               71 |            128 |         1.80 |
+|  cl/inst/clk_out1 | M/aes__kg_save_key3_3[31]_i_1_n_0                |                                 |               31 |            128 |         4.13 |
+|  cl/inst/clk_out1 | M/input_text$EN                                  | M/input_text[127]_i_1_n_0       |               48 |            128 |         2.67 |
+|  cl/inst/clk_out1 | M/aes__kg_save_key3_4[31]_i_1_n_0                |                                 |               29 |            128 |         4.41 |
+|  cl/inst/clk_out1 | M/aes__kg_save_key3_5[31]_i_1_n_0                |                                 |               28 |            128 |         4.57 |
+|  cl/inst/clk_out1 | M/MUX_aes__dr_rg_state$write_1__SEL_6            | M/aes__dr_sb/p_0_in__0          |               62 |            128 |         2.06 |
+|  cl/inst/clk_out1 | M/aes__kg_save_key1_0$EN                         |                                 |               43 |            128 |         2.98 |
+|  cl/inst/clk_out1 | M/aes__kg_save_key3_9[31]_i_1_n_0                |                                 |               68 |            128 |         1.88 |
+|  cl/inst/clk_out1 | M/aes__kg_save_key3_8[31]_i_1_n_0                |                                 |               22 |            128 |         5.82 |
+|  cl/inst/clk_out1 | M/aes__kg_save_key3_7[31]_i_1_n_0                |                                 |               32 |            128 |         4.00 |
+|  cl/inst/clk_out1 | M/aes__kg_save_key3_6[31]_i_1_n_0                |                                 |               35 |            128 |         3.66 |
+|  cl/inst/clk_out1 | M/aes__rg_state$EN5                              | M/aes__dr_sb/p_0_in__0          |               38 |            129 |         3.39 |
+|  cl/inst/clk_out1 | M/aes__dr_col_0$EN                               | M/aes__dr_sb/p_0_in__0          |               52 |            130 |         2.50 |
++-------------------+--------------------------------------------------+---------------------------------+------------------+----------------+--------------+
+
+

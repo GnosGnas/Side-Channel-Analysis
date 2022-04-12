@@ -1,0 +1,8 @@
+
+main:
+	@echo "source /tools/pd_tools/pd.sh"
+	dc_shell -f synth.tcl
+
+clean:
+	cd reports&&rm aes* default* *synthesized.v MK* *verilog*
+	rm default* *synthesized.v MK* *verilog*

@@ -1,0 +1,41 @@
+C:\katashita\adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\bin\Debug\SASEBO_G_Checker.exe
+C:\katashita\adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\bin\Debug\SASEBO_G_Checker.pdb
+C:\katashita\adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\bin\Debug\FTD2XX_NET.dll
+C:\katashita\adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\bin\Debug\FTD2XX_NET.xml
+C:\katashita\adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\katashita\adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\SASEBO_G_Checker.Form_Main.resources
+C:\katashita\adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\SASEBO_G_Checker.Properties.Resources.resources
+C:\katashita\adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\katashita\adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\katashita\adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\SASEBO_G_Checker.exe
+C:\katashita\adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\SASEBO_G_Checker.pdb
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\SASEBO_G_Checker.exe
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\SASEBO_G_Checker.pdb
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\SASEBO_G_Checker.Form_Main.resources
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\SASEBO_G_Checker.Properties.Resources.resources
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\bin\Debug\SASEBO_G_Checker.exe
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\bin\Debug\SASEBO_G_Checker.pdb
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\bin\Debug\FTD2XX_NET.dll
+C:\Users\katashita\Dropbox\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\bin\Debug\FTD2XX_NET.xml
+C:\Users\katashita\Trunk\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\SASEBO_G_Checker.exe
+C:\Users\katashita\Trunk\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\SASEBO_G_Checker.pdb
+C:\Users\katashita\Trunk\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\bin\Debug\SASEBO_G_Checker.exe
+C:\Users\katashita\Trunk\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\bin\Debug\SASEBO_G_Checker.pdb
+C:\Users\katashita\Trunk\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\bin\Debug\FTD2XX_NET.dll
+C:\Users\katashita\Trunk\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\bin\Debug\FTD2XX_NET.xml
+C:\Users\katashita\Trunk\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\katashita\Trunk\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\SASEBO_G_Checker.Form_Main.resources
+C:\Users\katashita\Trunk\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\SASEBO_G_Checker.Properties.Resources.resources
+C:\Users\katashita\Trunk\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\katashita\Trunk\Adjustment\sasebo_g\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\netlab\Documents\sasebo giii\docs\sasebo_giii\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\SASEBO_G_Checker.exe
+C:\Users\netlab\Documents\sasebo giii\docs\sasebo_giii\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\SASEBO_G_Checker.pdb
+C:\Users\netlab\Documents\sasebo giii\docs\sasebo_giii\SASEBO_G_Checker\SASEBO_G_Checker\bin\Debug\SASEBO_G_Checker.exe
+C:\Users\netlab\Documents\sasebo giii\docs\sasebo_giii\SASEBO_G_Checker\SASEBO_G_Checker\bin\Debug\SASEBO_G_Checker.pdb
+C:\Users\netlab\Documents\sasebo giii\docs\sasebo_giii\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\netlab\Documents\sasebo giii\docs\sasebo_giii\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\SASEBO_G_Checker.Form_Main.resources
+C:\Users\netlab\Documents\sasebo giii\docs\sasebo_giii\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\SASEBO_G_Checker.Properties.Resources.resources
+C:\Users\netlab\Documents\sasebo giii\docs\sasebo_giii\SASEBO_G_Checker\SASEBO_G_Checker\obj\x86\Debug\SASEBO_G_Checker.csproj.GenerateResource.Cache

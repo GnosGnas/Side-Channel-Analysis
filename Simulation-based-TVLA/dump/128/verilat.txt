@@ -1,0 +1,24 @@
+                              : ... Top module 'main'
+module main();
+       ^~~~
+                              : ... Top module 'CLKBUFX2'
+module CLKBUFX2(A,Y);
+       ^~~~~~~~
+                              : ... Top module 'CLKBUFX3'
+module CLKBUFX3(A,Y);
+       ^~~~~~~~
+                              : ... Top module 'DFFSR'
+module  DFFSR (D,CLK,S,R,Q);
+        ^~~~~
+                              : ... Top module 'DFFNEGX1'
+module DFFNEGX1(D,CLK,Q);
+       ^~~~~~~~
+                              : ... Top module 'LATCH'
+module LATCH(CLK,D,Q);
+       ^~~~~
+                              : ... Top module 'TBUFX1'
+module TBUFX1(A,EN,Y);
+       ^~~~~~
+                              : ... Top module 'TBUFX2'
+module TBUFX2(A,EN,Y);
+       ^~~~~~

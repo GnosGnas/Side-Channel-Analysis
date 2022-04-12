@@ -1,0 +1,44 @@
+
+Warning-[UNKWN_OPTVSIM] Unknown option passed
+  Ignoring unknown option '-rdynamic' passed to 'vcs' and continuing 
+  compilation.
+
+
+Warning-[UNKWN_OPTVSIM] Unknown option passed
+  Ignoring unknown option '--no-as-needed' passed to 'vcs' and continuing 
+  compilation.
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_all' will be deprecated in a future release.  Please use 
+  '-debug_acc+all+dmptf -debug_region+cell+encrypt' instead.
+
+Command: vcs -full64 -LDFLAGS -Wl, -rdynamic --no-as-needed -l vcs_compile.log -sverilog \
++vpi +v2k -lca +cli+4 +libext+.v -debug_all +notimingcheck -y ./ -v main.v mkAES_synthesised.v \
+sample.v mkAesTest.v -o vcs_out
+                         Chronologic VCS (TM)
+        Version R-2020.12-1_Full64 -- Mon Oct 25 11:53:57 2021
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS Release Notes
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '+cli+4' will be deprecated in a future release.  Please use 
+  '-debug_access+pp+f+fn+nomemcbk -debug_region+cell+encrypt' instead.
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_all' will be deprecated in a future release.  Please use 
+  '-debug_acc+all -debug_region+cell+encrypt' instead.
+
+CPU time: .155 seconds to compile

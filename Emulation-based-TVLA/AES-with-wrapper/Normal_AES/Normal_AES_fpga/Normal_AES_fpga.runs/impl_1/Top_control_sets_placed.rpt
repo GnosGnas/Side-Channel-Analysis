@@ -1,0 +1,102 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Sun Apr 10 09:42:34 2022
+| Host         : surya-Legion running 64-bit Ubuntu 20.04.4 LTS
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7k160t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    24 |
+|    Minimum number of control sets                        |    24 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    31 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    24 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     9 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    11 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               6 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              26 |           15 |
+| Yes          | No                    | No                     |             128 |           43 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             809 |          351 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+-----------------------------------------+---------------------------+------------------+----------------+--------------+
+|    Clock Signal   |              Enable Signal              |      Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------+-----------------------------------------+---------------------------+------------------+----------------+--------------+
+|  cl/inst/clk_out1 | M/aes_/done_reg$EN                      | M/aes_/bbstub_locked      |                1 |              1 |         1.00 |
+|  cl/inst/clk_out1 | M/aes_/kg_rci$EN                        | M/aes_/kg_rci[3]_i_1_n_0  |                1 |              4 |         4.00 |
+|  cl/inst/clk_out1 | M/aes_/kg_round_number$EN               | M/aes_/bbstub_locked      |                2 |              4 |         2.00 |
+|  cl/inst/clk_out1 |                                         |                           |                3 |              6 |         2.00 |
+|  cl/inst/clk_out1 | M/aes_/kg_aes256_subcol4[0]             | M/aes_/bbstub_locked      |                2 |              8 |         4.00 |
+|  cl/inst/clk_out1 | M/aes_/kg_aes256_subcol4[23]            | M/aes_/bbstub_locked      |                5 |              8 |         1.60 |
+|  cl/inst/clk_out1 | M/aes_/kg_last_col_sub_rot[23]          | M/aes_/bbstub_locked      |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes_/kg_last_col_sub_rot[0]           | M/aes_/bbstub_locked      |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes_/kg_rcon[31]_i_1_n_0              | M/aes_/bbstub_locked      |                1 |              8 |         8.00 |
+|  cl/inst/clk_out1 | M/aes_/kg_sbox_out$EN                   | M/aes_/bbstub_locked      |                1 |              8 |         8.00 |
+|  cl/inst/clk_out1 | M/aes_/kg_aes256_subcol4[15]            | M/aes_/bbstub_locked      |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes_/kg_last_col_sub_rot[15]          | M/aes_/bbstub_locked      |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes_/kg_last_col_sub_rot[31]          | M/aes_/bbstub_locked      |                3 |              8 |         2.67 |
+|  cl/inst/clk_out1 | M/aes_/p_36_in                          | M/aes_/bbstub_locked      |               16 |             24 |         1.50 |
+|  cl/inst/clk_out1 |                                         | M/aes_/bbstub_locked      |               15 |             26 |         1.73 |
+|  cl/inst/clk_out1 | M/aes_/E[0]                             | M/aes_/SR[0]              |                9 |             31 |         3.44 |
+|  cl/inst/clk_out1 | M/aes_/WILL_FIRE_RL_process2_complete   | M/aes_/mod_state_reg[0]_0 |                8 |             32 |         4.00 |
+|  cl/inst/clk_out1 | M/aes_/kg_save_key3/col0$EN             | M/aes_/bbstub_locked      |               63 |            128 |         2.03 |
+|  cl/inst/clk_out1 | M/aes_/switcher_reg[0]                  | M/aes_/bbstub_locked      |               29 |            128 |         4.41 |
+|  cl/inst/clk_out1 | M/aes_/kg_save_key3/E[0]                |                           |               43 |            128 |         2.98 |
+|  cl/inst/clk_out1 | M/aes_/sboxes_0$getbyte_decrypt_146_out | M/aes_/bbstub_locked      |              107 |            128 |         1.20 |
+|  cl/inst/clk_out1 | M/aes_/kg_prev_key0$EN                  | M/aes_/bbstub_locked      |               44 |            128 |         2.91 |
+|  cl/inst/clk_out1 | M/aes_/kg_save_key3/kg_rg_state$D_IN[0] |                           |               32 |            128 |         4.00 |
+|  cl/inst/clk_out1 | M/aes_/MUX__unnamed_$write_1__SEL_1     | M/aes_/bbstub_locked      |               47 |            129 |         2.74 |
++-------------------+-----------------------------------------+---------------------------+------------------+----------------+--------------+
+
+

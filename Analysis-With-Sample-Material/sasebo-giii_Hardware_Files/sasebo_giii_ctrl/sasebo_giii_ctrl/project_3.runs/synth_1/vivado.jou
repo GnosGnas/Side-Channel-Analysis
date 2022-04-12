@@ -1,0 +1,9 @@
+#-----------------------------------------------------------
+# Vivado v2012.3
+# Build 209282 by xbuild on Thu Oct 18 20:54:02 MDT 2012
+# Start of session at: Wed May 24 12:00:55 2017
+# Process ID: 4892
+# Log file: C:/Arsath/sasebo_giii/sasebo_giii_aes/sasebo_giii_aes/project_1.runs/synth_1/CHIP_SASEBO_GIII_AES.rds
+# Journal file: C:/Arsath/sasebo_giii/sasebo_giii_aes/sasebo_giii_aes/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source CHIP_SASEBO_GIII_AES.tcl

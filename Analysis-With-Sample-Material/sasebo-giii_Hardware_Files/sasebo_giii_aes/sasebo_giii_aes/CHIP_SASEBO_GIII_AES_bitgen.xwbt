@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\DPA_verilog\surya\sasebo_giii_modified_surya\sasebo_giii_aes\sasebo_giii_aes\CHIP_SASEBO_GIII_AES.ncd
+OUTFILE=C:\DPA_verilog\surya\sasebo_giii_modified_surya\sasebo_giii_aes\sasebo_giii_aes\CHIP_SASEBO_GIII_AES.bit
+FAMILY=Kintex7
+PART=xc7k160t-1fbg676
+WORKINGDIR=C:\DPA_verilog\surya\sasebo_giii_modified_surya\sasebo_giii_aes\sasebo_giii_aes
+LICENSE=WebPack
+USER_INFO=211177594_0_0_639

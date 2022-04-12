@@ -1,0 +1,66 @@
+-- Copyright(C) 2006 by Xilinx, Inc. All rights reserved. 
+-- The files included in this design directory contain proprietary, confidential information of 
+-- Xilinx, Inc., are distributed under license from Xilinx, Inc., and may be used, copied 
+-- and/or disclosed only pursuant to the terms of a valid license agreement with Xilinx, Inc. 
+-- This copyright notice must be retained as part of this text at all times. 
+
+
+JC2_VER is a bi-directional 4-bit Johnson counter with stop control.
+
+DESIGN FLOW: Stand-alone Verilog design (JC2_TOP.V)
+
+TARGET DEVICE: XC9572XL-CS48 (any speed)
+
+I/O PINS:
+	CLK       : input free-running clock 
+	LEFT      : input signal to shift left (active-low switch)
+	RIGHT     : input signal to shift right (active-low switch)
+	STOP      : input signal to stop counting (active-low switch)
+	Q<3>-Q<0> : counter outputs (active-low LEDs; Q0 is right-most)
+
+OPERATION:
+	The counter is triggered on the rising edge of the clock (CLK). 
+	A low pulse on the LEFT input will cause the counter to start 
+	shifting left from its current state. A low pulse on the RIGHT
+	input will cause the counter to start shifting right from its 
+	current state. A low pulse on the STOP input will cause the 
+	counter to hold its current state until LEFT or RIGHT is pulsed.
+
+        The following sequence appears on outputs Q<3>-Q<0> when shifting left:
+		0000
+		0001
+		0011
+		0111
+		1111
+		1110
+		1100
+		1000
+		0000 (repeats)
+
+        The following sequence appears on outputs Q<3>-Q<0> when shifting right:
+		0000
+		1000
+		1100
+		1110
+		1111
+		0111
+		0011
+		0001
+		0000 (repeats)
+
+	After power-up, the counter is stopped with all outputs low (LEDs lit).
+ 
+SIMULATION:
+	Verilog functional simulation test fixture is provided in JC2_FUNC.TF.
+	Verilog timing simulation test fixture is provided in JC2_TIM.TF.
+
+Using the jc2_top.ucf file, the Johnson Counter design used in this 
+example can be downloaded to the xc9572-cs48 FAE Demo board.  
+(note: If using Synplify, Synplify Pro, or LeonardoSpectrum for synthesis
+the jc.ucf file will need to be edited as indicated in the file.)
+
+For support information and contacts please see:
+
+	http://www.xilinx.com/support
+or
+	http://www.xilinx.com/support/services/contact_info.htm

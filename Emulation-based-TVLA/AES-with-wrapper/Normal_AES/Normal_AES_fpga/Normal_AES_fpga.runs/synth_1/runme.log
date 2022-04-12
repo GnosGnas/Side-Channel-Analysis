@@ -1,0 +1,335 @@
+
+*** Running vivado
+    with args -log Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Top.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2084.586 ; gain = 0.047 ; free physical = 3189 ; free virtual = 11944
+Command: synth_design -top Top -part xc7k160tfbg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Device 21-403] Loading part xc7k160tfbg676-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15087
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2084.711 ; gain = 0.000 ; free physical = 2593 ; free virtual = 11344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/sources_1/imports/verilog_files/Top.v:19]
+INFO: [Synth 8-6157] synthesizing module 'mkAES_Wrapper2' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/src-codes/verilog_files/mkAES_Wrapper2.v:35]
+INFO: [Synth 8-6157] synthesizing module 'mkAES' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/src-codes/verilog_files/mkAES.v:46]
+INFO: [Synth 8-6157] synthesizing module 'mkRconRom' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/src-codes/verilog_files/mkRconRom.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'mkRconRom' (1#1) [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/src-codes/verilog_files/mkRconRom.v:32]
+INFO: [Synth 8-6157] synthesizing module 'BRAM1' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/sources_1/imports/verilog_files/BRAM1.v:8]
+	Parameter PIPELINED bound to: 1'b0 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter MEMSIZE bound to: 5'b10000 
+INFO: [Synth 8-6155] done synthesizing module 'BRAM1' (2#1) [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/sources_1/imports/verilog_files/BRAM1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'mkSbox2' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/src-codes/verilog_files/mkSbox2.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'mkSbox2' (3#1) [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/src-codes/verilog_files/mkSbox2.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'mkAES' (4#1) [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/src-codes/verilog_files/mkAES.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'mkAES_Wrapper2' (5#1) [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/src-codes/verilog_files/mkAES_Wrapper2.v:35]
+WARNING: [Synth 8-689] width (1) of port connection 'output_fix' does not match port width (128) of module 'mkAES_Wrapper2' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/sources_1/imports/verilog_files/Top.v:33]
+WARNING: [Synth 8-7071] port 'RDY_trigger_pin' of module 'mkAES_Wrapper2' is unconnected for instance 'M' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/sources_1/imports/verilog_files/Top.v:30]
+WARNING: [Synth 8-7071] port 'RDY_done_signal' of module 'mkAES_Wrapper2' is unconnected for instance 'M' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/sources_1/imports/verilog_files/Top.v:30]
+WARNING: [Synth 8-7071] port 'RDY_output_fix' of module 'mkAES_Wrapper2' is unconnected for instance 'M' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/sources_1/imports/verilog_files/Top.v:30]
+WARNING: [Synth 8-7023] instance 'M' of module 'mkAES_Wrapper2' has 8 connections declared, but only 5 given [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/sources_1/imports/verilog_files/Top.v:30]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.runs/synth_1/.Xil/Vivado-13199-surya-Legion/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (6#1) [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.runs/synth_1/.Xil/Vivado-13199-surya-Legion/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (7#1) [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/sources_1/imports/verilog_files/Top.v:19]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2190.586 ; gain = 105.875 ; free physical = 2669 ; free virtual = 11424
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2202.461 ; gain = 117.750 ; free physical = 2644 ; free virtual = 11400
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2202.461 ; gain = 117.750 ; free physical = 2644 ; free virtual = 11400
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2202.461 ; gain = 0.000 ; free physical = 2621 ; free virtual = 11375
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'cl'
+WARNING: [Vivado 12-584] No ports matched ''. [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:1]
+WARNING: [Vivado 12-584] No ports matched ''. [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:4]
+Finished Parsing XDC File [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'cl'
+Parsing XDC File [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/constrs_1/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2359.273 ; gain = 0.000 ; free physical = 2482 ; free virtual = 11238
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2359.273 ; gain = 0.000 ; free physical = 2482 ; free virtual = 11238
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 2359.273 ; gain = 274.562 ; free physical = 2553 ; free virtual = 11295
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tfbg676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 2359.273 ; gain = 274.562 ; free physical = 2553 ; free virtual = 11295
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK_N. (constraint file  /home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK_N. (constraint file  /home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK_P. (constraint file  /home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK_P. (constraint file  /home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 8).
+Applied set_property DONT_TOUCH = true for cl. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 2359.273 ; gain = 274.562 ; free physical = 2553 ; free virtual = 11295
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 2359.273 ; gain = 274.562 ; free physical = 2506 ; free virtual = 11249
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 8     
+	   3 Input    4 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 30    
+	   5 Input     32 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 22    
+	   8 Input      8 Bit         XORs := 3     
+	   9 Input      8 Bit         XORs := 5     
+	   4 Input      8 Bit         XORs := 2     
+	   6 Input      8 Bit         XORs := 5     
+	   3 Input      8 Bit         XORs := 2     
+	   7 Input      8 Bit         XORs := 3     
+	   2 Input      2 Bit         XORs := 32    
+	   2 Input      1 Bit         XORs := 1005  
+	   3 Input      1 Bit         XORs := 176   
+	   4 Input      1 Bit         XORs := 126   
+	   5 Input      1 Bit         XORs := 33    
+	   6 Input      1 Bit         XORs := 10    
+	   7 Input      1 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 2     
+	               32 Bit    Registers := 25    
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 23    
++---RAMs : 
+	              512 Bit	(16 X 32 bit)          RAMs := 4     
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 61    
+	   4 Input   32 Bit        Muxes := 4     
+	   5 Input   32 Bit        Muxes := 2     
+	   6 Input   32 Bit        Muxes := 5     
+	   3 Input   32 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 84    
+	   4 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+	   7 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 32    
+	   2 Input    4 Bit        Muxes := 9     
+	   4 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 2     
+	   9 Input    4 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 35    
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2359.273 ; gain = 274.562 ; free physical = 2190 ; free virtual = 10945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+----------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object           | Inference | Size (Depth x Width) | Primitives     | 
++------------+----------------------+-----------+----------------------+----------------+
+|\M/aes_     | kg_save_key0/RAM_reg | Implied   | 16 x 32              | RAM16X1S x 32	 | 
+|\M/aes_     | kg_save_key1/RAM_reg | Implied   | 16 x 32              | RAM16X1S x 32	 | 
+|\M/aes_     | kg_save_key2/RAM_reg | Implied   | 16 x 32              | RAM16X1S x 32	 | 
+|\M/aes_     | kg_save_key3/RAM_reg | Implied   | 16 x 32              | RAM16X1S x 32	 | 
++------------+----------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:09 . Memory (MB): peak = 2359.273 ; gain = 274.562 ; free physical = 1987 ; free virtual = 10742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:32 . Memory (MB): peak = 2443.492 ; gain = 358.781 ; free physical = 1680 ; free virtual = 10439
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+----------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object           | Inference | Size (Depth x Width) | Primitives     | 
++------------+----------------------+-----------+----------------------+----------------+
+|\M/aes_     | kg_save_key0/RAM_reg | Implied   | 16 x 32              | RAM16X1S x 32	 | 
+|\M/aes_     | kg_save_key1/RAM_reg | Implied   | 16 x 32              | RAM16X1S x 32	 | 
+|\M/aes_     | kg_save_key2/RAM_reg | Implied   | 16 x 32              | RAM16X1S x 32	 | 
+|\M/aes_     | kg_save_key3/RAM_reg | Implied   | 16 x 32              | RAM16X1S x 32	 | 
++------------+----------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:30 ; elapsed = 00:01:38 . Memory (MB): peak = 2458.492 ; gain = 373.781 ; free physical = 1596 ; free virtual = 10369
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:35 ; elapsed = 00:01:43 . Memory (MB): peak = 2458.492 ; gain = 373.781 ; free physical = 2654 ; free virtual = 11466
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:35 ; elapsed = 00:01:43 . Memory (MB): peak = 2458.492 ; gain = 373.781 ; free physical = 2654 ; free virtual = 11466
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:36 ; elapsed = 00:01:44 . Memory (MB): peak = 2458.492 ; gain = 373.781 ; free physical = 2667 ; free virtual = 11467
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:36 ; elapsed = 00:01:44 . Memory (MB): peak = 2458.492 ; gain = 373.781 ; free physical = 2667 ; free virtual = 11467
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:36 ; elapsed = 00:01:44 . Memory (MB): peak = 2458.492 ; gain = 373.781 ; free physical = 2669 ; free virtual = 11466
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:36 ; elapsed = 00:01:44 . Memory (MB): peak = 2458.492 ; gain = 373.781 ; free physical = 2669 ; free virtual = 11466
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |clk_wiz  |     1|
+|2     |CARRY4   |    16|
+|3     |LUT1     |     7|
+|4     |LUT2     |   287|
+|5     |LUT3     |   536|
+|6     |LUT4     |   418|
+|7     |LUT5     |   760|
+|8     |LUT6     |  1241|
+|9     |RAM16X1S |   128|
+|10    |FDRE     |   951|
+|11    |FDSE     |    17|
+|12    |IBUF     |     1|
+|13    |OBUF     |     3|
+|14    |OBUFT    |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:36 ; elapsed = 00:01:44 . Memory (MB): peak = 2458.492 ; gain = 373.781 ; free physical = 2669 ; free virtual = 11466
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:32 ; elapsed = 00:01:39 . Memory (MB): peak = 2458.492 ; gain = 216.969 ; free physical = 2722 ; free virtual = 11519
+Synthesis Optimization Complete : Time (s): cpu = 00:01:36 ; elapsed = 00:01:44 . Memory (MB): peak = 2458.500 ; gain = 373.781 ; free physical = 2722 ; free virtual = 11519
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2458.500 ; gain = 0.000 ; free physical = 2794 ; free virtual = 11591
+INFO: [Netlist 29-17] Analyzing 144 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2490.508 ; gain = 0.000 ; free physical = 2751 ; free virtual = 11548
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 2490.508 ; gain = 405.922 ; free physical = 2949 ; free virtual = 11746
+INFO: [Common 17-1381] The checkpoint '/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Normal_AES/Normal_AES_fpga/Normal_AES_fpga.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 10 09:40:58 2022...

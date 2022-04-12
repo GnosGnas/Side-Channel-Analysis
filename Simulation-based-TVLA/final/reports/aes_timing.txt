@@ -1,0 +1,81 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mkAES
+Version: O-2018.06-SP5-4
+Date   : Mon Jan 31 16:15:50 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: dr_colout0_reg[17]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: dr_colout2_reg[10]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dr_colout0_reg[17]/CLK (DFFPOSX1)        0.00 #     0.00 r
+  dr_colout0_reg[17]/Q (DFFPOSX1)          0.12       0.12 f
+  U22941/Y (XNOR2X1)                       0.08       0.20 r
+  U22801/Y (XNOR2X1)                       0.13       0.33 r
+  U32702/Y (XNOR2X1)                       0.07       0.41 r
+  U32703/Y (XNOR2X1)                       0.07       0.47 r
+  U32707/Y (XOR2X1)                        0.04       0.51 f
+  U20236/Y (AND2X1)                        0.04       0.55 f
+  U24045/Y (INVX1)                         0.02       0.57 r
+  U16965/Y (AND2X1)                        0.05       0.62 r
+  U32133/Y (INVX1)                         0.04       0.66 f
+  U32710/Y (MUX2X1)                        0.05       0.71 r
+  U24046/Y (AND2X2)                        0.05       0.76 r
+  U18322/Y (XNOR2X1)                       0.06       0.81 r
+  U16843/Y (INVX1)                         0.04       0.85 f
+  U18987/Y (AND2X2)                        0.04       0.89 f
+  U18534/Y (INVX1)                         0.01       0.90 r
+  U20914/Y (XNOR2X1)                       0.04       0.94 r
+  U20913/Y (XNOR2X1)                       0.07       1.01 r
+  U21876/Y (XNOR2X1)                       0.07       1.08 r
+  U17337/Y (NOR2X1)                        0.03       1.11 f
+  U17335/Y (XOR2X1)                        0.03       1.15 f
+  U17353/Y (AND2X2)                        0.04       1.19 f
+  U17982/Y (NOR2X1)                        0.06       1.24 r
+  U20892/Y (XOR2X1)                        0.06       1.31 r
+  U20891/Y (XNOR2X1)                       0.05       1.36 r
+  U16729/Y (AND2X1)                        0.04       1.39 r
+  U32731/Y (INVX4)                         0.03       1.43 f
+  U22934/Y (XOR2X1)                        0.10       1.53 r
+  U23317/Y (XNOR2X1)                       0.06       1.58 r
+  U19114/Y (XNOR2X1)                       0.03       1.62 f
+  U33501/Y (MUX2X1)                        0.08       1.70 r
+  U37978/YS (FAX1)                         0.10       1.79 f
+  U21416/Y (XOR2X1)                        0.06       1.85 r
+  U21414/Y (XOR2X1)                        0.04       1.89 f
+  U18521/Y (AND2X1)                        0.04       1.93 f
+  U18757/Y (INVX1)                         0.00       1.93 r
+  U17820/Y (NAND2X1)                       0.01       1.94 f
+  dr_colout2_reg[10]/D (DFFPOSX1)          0.00       1.94 f
+  data arrival time                                   1.94
+
+  clock CLK (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  dr_colout2_reg[10]/CLK (DFFPOSX1)        0.00       2.00 r
+  library setup time                      -0.06       1.94
+  data required time                                  1.94
+  -----------------------------------------------------------
+  data required time                                  1.94
+  data arrival time                                  -1.94
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

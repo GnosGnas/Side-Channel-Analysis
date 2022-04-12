@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--Product Version: Vivado v2012.3-->
+<Project Version="6" Minor="4">
+	<FileSet Dir="sources_1" File="fileset.xml"/>
+	<FileSet Dir="constrs_1" File="fileset.xml"/>
+	<FileSet Dir="sim_1" File="fileset.xml"/>
+	<DefaultLaunch Dir="$PRUNDIR"/>
+	<Config>
+		<Option Name="Id" Val="3174d4a26a894a9fb09d034f55ad00b3"/>
+		<Option Name="Part" Val="xc7vx485tffg1157-1"/>
+		<Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+		<Option Name="TargetLanguage" Val="Verilog"/>
+		<Option Name="TargetSimulator" Val="XSim"/>
+		<Option Name="Board" Val=""/>
+		<Option Name="SourceMgmtMode" Val="DisplayOnly"/>
+		<Option Name="ActiveSimSet" Val="sim_1"/>
+		<Option Name="CxlOverwriteLibs" Val="1"/>
+		<Option Name="CxlFuncsim" Val="1"/>
+		<Option Name="CxlTimesim" Val="1"/>
+		<Option Name="CxlCore" Val="1"/>
+		<Option Name="CxlEdk" Val="0"/>
+		<Option Name="CxlExcludeCores" Val="1"/>
+		<Option Name="CxlExcludeSubLibs" Val="0"/>
+	</Config>
+</Project>
+

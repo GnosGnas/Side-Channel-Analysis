@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : mkAES
+Version: O-2018.06-SP5-4
+Date   : Mon Jan 31 16:15:50 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'mkAES' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    gscl45nm (File: /home/surya/gscl45nm.db)
+
+Number of ports:                          785
+Number of nets:                         30061
+Number of cells:                        29541
+Number of combinational cells:          26583
+Number of sequential cells:              2957
+Number of macros/black boxes:               0
+Number of buf/inv:                      12417
+Number of references:                      23
+
+Combinational area:              69599.065744
+Buf/Inv area:                    21673.681376
+Noncombinational area:           23591.241177
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 93190.306921
+Total area:                 undefined
+1

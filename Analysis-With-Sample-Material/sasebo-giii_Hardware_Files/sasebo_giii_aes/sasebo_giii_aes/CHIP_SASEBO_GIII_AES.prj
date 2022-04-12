@@ -1,0 +1,4 @@
+verilog work "../../../sasebo_giii_modified_arsath/sasebo_giii_aes/aes_composite_enc.v"
+verilog work "outer.v"
+verilog work "../lbus_if.v"
+verilog work "../chip_sasebo_giii_aes.v"

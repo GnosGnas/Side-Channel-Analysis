@@ -1,0 +1,4 @@
+verilog work "C:/Arsath/sasebo_giii/sasebo_giii_aes/aes_composite_enc.v"
+verilog work "C:/Arsath/sasebo_giii/sasebo_giii_aes/chip_sasebo_giii_aes.v"
+verilog work "C:/Arsath/sasebo_giii/sasebo_giii_aes/lbus_if.v"
+verilog work C:/Xilinx/14.3/ISE_DS/PlanAhead/data/verilog/src/glbl.v

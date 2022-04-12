@@ -1,0 +1,488 @@
+# -------------------------------------------------------------------------
+# Pin assignment of Spartan-6 on SASEBO-GIII
+# 
+# File name   : pin_sasebo_giii_sp6.v
+# Version     : 1.0
+# Created     : APR/02/2012
+# Last update : APR/11/2012
+# Desgined by : Toshihiro Katashita
+# 
+# 
+# Copyright (C) 2012 AIST
+# 
+# By using this code, you agree to the following terms and conditions.
+# 
+# This code is copyrighted by AIST ("us").
+# 
+# Permission is hereby granted to copy, reproduce, redistribute or
+# otherwise use this code as long as: there is no monetary profit gained
+# specifically from the use or reproduction of this code, it is not sold,
+# rented, traded or otherwise marketed, and this copyright notice is
+# included prominently in any copy made.
+# 
+# We shall not be liable for any damages, including without limitation
+# direct, indirect, incidental, special or consequential damages arising
+# from the use of this code.
+# 
+# When you publish any results arising from the use of this code, we will
+# appreciate it if you can cite our webpage.
+# (http://www.risec.aist.go.jp/project/sasebo/)
+# -------------------------------------------------------------------------
+
+#================================================　Timing constraint
+NET "clkin" TNM_NET = "clkin_grp" ;
+TIMESPEC "TS_clkin" = PERIOD : "clkin_grp" : 41.666 ns HIGH 50.0%;
+
+TIMEGRP usb_io = PADS(*usb_d<*> : usb_*);
+TIMEGRP "usb_io" OFFSET = IN  15.0 ns BEFORE "clkin";
+TIMEGRP "usb_io" OFFSET = OUT 15.0 ns AFTER  "clkin";
+
+
+#================================================ Pin assignment
+#------------------------------------------------ Clock, reset, LED, and SW.
+#################
+# CLOCK / RESET #
+#################
+NET "clkin"    LOC="M3" |IOSTANDARD=LVCMOS25;
+NET "osc_en_b" LOC="M1" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2 |TIG;
+
+#NET "clk_ext_p0" LOC="D11" | IOSTANDARD=LVDS_25;
+#NET "clk_ext_n0" LOC="C12" | IOSTANDARD=LVDS_25;
+#NET "clk_ext_p1" LOC="C11" | IOSTANDARD=LVDS_25;
+#NET "clk_ext_n1" LOC="A11" | IOSTANDARD=LVDS_25;
+
+NET "rstnin"   LOC="M8" |IOSTANDARD=LVCMOS25 |TIG;
+
+#NET "wdt_wdi"   LOC="R9"  |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2 |TIG;
+#NET "wdt_wdo_b" LOC="R22" |IOSTANDARD=LVCMOS15 |TIG ;
+
+##########
+# SWITCH #
+##########
+#NET "pushsw"    LOC="M19" |IOSTANDARD=LVCMOS15 |TIG;
+
+#NET "dipsw<0>" LOC="R20" |IOSTANDARD=LVCMOS15 |TIG;
+#NET "dipsw<1>" LOC="T21" |IOSTANDARD=LVCMOS15 |TIG;
+#NET "dipsw<2>" LOC="U20" |IOSTANDARD=LVCMOS15 |TIG;
+#NET "dipsw<3>" LOC="V21" |IOSTANDARD=LVCMOS15 |TIG;
+#NET "dipsw<4>" LOC="W22" |IOSTANDARD=LVCMOS15 |TIG;
+#NET "dipsw<5>" LOC="V22" |IOSTANDARD=LVCMOS15 |TIG;
+#NET "dipsw<6>" LOC="U22" |IOSTANDARD=LVCMOS15 |TIG;
+#NET "dipsw<7>" LOC="T22" |IOSTANDARD=LVCMOS15 |TIG;
+
+#######
+# LED #
+#######
+NET "led<0>" LOC="M7"  |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2 |TIG;
+NET "led<1>" LOC="H2"  |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2 |TIG;
+NET "led<2>" LOC="J6"  |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2 |TIG;
+NET "led<3>" LOC="H6"  |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2 |TIG;
+NET "led<4>" LOC="H5"  |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2 |TIG;
+
+NET "led<5>" LOC="P21" |IOSTANDARD=LVCMOS15 |SLEW="QUIETIO" |DRIVE=2 |TIG;
+NET "led<6>" LOC="P22" |IOSTANDARD=LVCMOS15 |SLEW="QUIETIO" |DRIVE=2 |TIG;
+NET "led<7>" LOC="P20" |IOSTANDARD=LVCMOS15 |SLEW="QUIETIO" |DRIVE=2 |TIG;
+NET "led<8>" LOC="N20" |IOSTANDARD=LVCMOS15 |SLEW="QUIETIO" |DRIVE=2 |TIG;
+NET "led<9>" LOC="N22" |IOSTANDARD=LVCMOS15 |SLEW="QUIETIO" |DRIVE=2 |TIG;
+
+########
+# GPIO #
+########
+#NET "gpio<0>" LOC="K7"  |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2 |TIG ;
+#NET "gpio<1>" LOC="K8"  |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2 |TIG ;
+#NET "gpio<2>" LOC="J7"  |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2 |TIG ;
+#NET "gpio<3>" LOC="H8"  |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2 |TIG ;
+#NET "gpio<4>" LOC="B18" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2 |TIG ;
+#NET "gpio<5>" LOC="A18" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2 |TIG ;
+#NET "gpio<6>" LOC="G7"  |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2 |TIG ;
+#NET "gpio<7>" LOC="G6"  |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2 |TIG ;
+#NET "gpio<8>" LOC="G4"  |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2 |TIG ;
+#NET "gpio<9>" LOC="F7"  |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2 |TIG ;
+
+#------------------------------------------------ USB
+###############
+# USB FT2232H #
+###############
+NET "usb_d<0>"  LOC="N4" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+NET "usb_d<1>"  LOC="H4" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+NET "usb_d<2>"  LOC="M2" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+NET "usb_d<3>"  LOC="H3" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+NET "usb_d<4>"  LOC="K6" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+NET "usb_d<5>"  LOC="M4" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+NET "usb_d<6>"  LOC="K2" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+NET "usb_d<7>"  LOC="K1" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+NET "usb_rxfn"  LOC="H1" |IOSTANDARD=LVCMOS25;
+NET "usb_txen"  LOC="P5" |IOSTANDARD=LVCMOS25;
+NET "usb_rdn"   LOC="L6" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+NET "usb_wr"    LOC="M5" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+NET "usb_siwua" LOC="L3" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+NET "usb_rstn"  LOC="N1" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+
+#NET "ftdi_acbus<0>" LOC="H1" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_acbus<1>" LOC="P5" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_acbus<2>" LOC="L6" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_acbus<3>" LOC="M5" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_acbus<4>" LOC="L3" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_acbus<5>" LOC="K3" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_acbus<6>" LOC="L1" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_acbus<7>" LOC="M6" |IOSTANDARD=LVCMOS25;
+
+#NET "ftdi_adbus<0>" LOC="N4" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_adbus<1>" LOC="H4" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_adbus<2>" LOC="M2" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_adbus<3>" LOC="H3" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_adbus<4>" LOC="K6" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_adbus<5>" LOC="M4" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_adbus<6>" LOC="K2" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_adbus<7>" LOC="K1" |IOSTANDARD=LVCMOS25;
+
+#NET "ftdi_bcbus<0>" LOC="T2" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_bcbus<1>" LOC="U1" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_bcbus<2>" LOC="V2" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_bcbus<3>" LOC="T3" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_bcbus<4>" LOC="V1" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_bcbus<5>" LOC="U4" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_bcbus<6>" LOC="T1" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_bcbus<7>" LOC="V3" |IOSTANDARD=LVCMOS25;
+
+#NET "ftdi_bdbus<0>" LOC="P4" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_bdbus<1>" LOC="P3" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_bdbus<2>" LOC="P1" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_bdbus<3>" LOC="P2" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_bdbus<4>" LOC="R4" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_bdbus<5>" LOC="R1" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_bdbus<6>" LOC="R3" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_bdbus<7>" LOC="T4" |IOSTANDARD=LVCMOS25;
+
+#NET "ftdi_pwren_b"   LOC="U3" |IOSTANDARD=LVCMOS25;
+#NET "ftdi_suspend_b" LOC="N3" |IOSTANDARD=LVCMOS25;
+
+NET "usb_rom_cs" LOC="W3" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+NET "usb_rom_di" LOC="W1" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+NET "usb_rom_do" LOC="Y1" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+NET "usb_rom_sk" LOC="L4" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+
+NET "eeprom_cs"  LOC="P7" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+NET "eeprom_di"  LOC="P8" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+NET "eeprom_do"  LOC="R7" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+NET "eeprom_sk"  LOC="P6" |IOSTANDARD=LVCMOS25 |SLEW="QUIETIO" |DRIVE=2;
+
+#------------------------------------------------ Spartan-6 configuration ROM
+##########
+# XCF32P #
+##########
+#NET "s_conf_d<0>"    LOC="AA20" |IOSTANDARD=LVCMOS25;
+#NET "s_conf_d<1>"    LOC="U14"  |IOSTANDARD=LVCMOS25;
+#NET "s_conf_d<2>"    LOC="U13"  |IOSTANDARD=LVCMOS25;
+#NET "s_conf_d<3>"    LOC="AA6"  |IOSTANDARD=LVCMOS25;
+#NET "s_conf_d<4>"    LOC="AB6"  |IOSTANDARD=LVCMOS25;
+#NET "s_conf_d<5>"    LOC="W4"   |IOSTANDARD=LVCMOS25;
+#NET "s_conf_d<6>"    LOC="Y4"   |IOSTANDARD=LVCMOS25;
+#NET "s_conf_d<7>"    LOC="Y7"   |IOSTANDARD=LVCMOS25;
+#NET "s_conf_busy"    LOC="T20"  |IOSTANDARD=LVCMOS25;
+#NET "s_conf_cclk"    LOC="Y21"  |IOSTANDARD=LVCMOS25;
+#NET "s_conf_csi_b"   LOC="AB20" |IOSTANDARD=LVCMOS25;
+#NET "s_conf_cso_b"   LOC="T5"   |IOSTANDARD=LVCMOS25;
+#NET "s_conf_hswapen" LOC="A3"   |IOSTANDARD=LVCMOS25;
+#NET "s_conf_init_b"  LOC="T6"   |IOSTANDARD=LVCMOS25;
+#NET "s_conf_m0"      LOC="AA22" |IOSTANDARD=LVCMOS25;
+#NET "s_conf_m1"      LOC="U15"  |IOSTANDARD=LVCMOS25;
+#NET "s_conf_rdwr_b"  LOC="AB7"  |IOSTANDARD=LVCMOS25;
+
+#------------------------------------------------ Virtex-7 configuration
+#############
+# SelectMap #
+#############
+NET "cfg_mosi"  LOC="D2" |IOSTANDARD=LVCMOS25;
+NET "cfg_din"   LOC="C1" |IOSTANDARD=LVCMOS25;
+NET "cfg_cclk"  LOC="J4" |IOSTANDARD=LVCMOS25;
+NET "cfg_initn" LOC="F5" |IOSTANDARD=LVCMOS25;
+NET "cfg_done"  LOC="E1" |IOSTANDARD=LVCMOS25;
+NET "cfg_rdwrn" LOC="F1" |IOSTANDARD=LVCMOS25;
+NET "cfg_progn" LOC="E3" |IOSTANDARD=LVCMOS25;
+#NET "cfg_fcsb" LOC="G1" |IOSTANDARD=LVCMOS25;
+
+#NET "k_conf_d<0>"       LOC="D2" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_d<1>"       LOC="C1" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_d<2>"       LOC="B2" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_d<3>"       LOC="B3" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_d<4>"       LOC="E4" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_d<5>"       LOC="F3" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_d<6>"       LOC="D5" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_d<7>"       LOC="R6" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_d<8>"       LOC="D1" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_d<9>"       LOC="B1" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_d<10>"      LOC="A2" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_d<11>"      LOC="C3" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_d<12>"      LOC="C4" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_d<13>"      LOC="D3" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_d<14>"      LOC="E5" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_d<15>"      LOC="G3" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_cclk"       LOC="J4" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_emcclk"     LOC="F2" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_init_b"     LOC="F5" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_done"       LOC="E1" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_rdwr_b"     LOC="F1" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_program_b"  LOC="E3" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_csi_b"      LOC="G1" |IOSTANDARD=LVCMOS25;
+#NET "k_conf_dout_cso_b" LOC="A4" |IOSTANDARD=LVCMOS25;
+
+#------------------------------------------------ Local bus
+############################################
+# Kintex-7 HPIC (LVCMOS15, SSTL15 or HSTL) #
+############################################
+NET "lbus_clkn"   LOC="K21" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+
+NET "lbus_do<0>"  LOC="D21" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+NET "lbus_do<1>"  LOC="C19" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+NET "lbus_do<2>"  LOC="B21" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+NET "lbus_do<3>"  LOC="D19" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+NET "lbus_do<4>"  LOC="C20" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+NET "lbus_do<5>"  LOC="F18" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+NET "lbus_do<6>"  LOC="A20" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+NET "lbus_do<7>"  LOC="F21" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+NET "lbus_do<8>"  LOC="K20" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+NET "lbus_do<9>"  LOC="H21" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+NET "lbus_do<10>" LOC="M20" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+NET "lbus_do<11>" LOC="J20" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+NET "lbus_do<12>" LOC="H20" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+NET "lbus_do<13>" LOC="L20" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+NET "lbus_do<14>" LOC="E20" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+NET "lbus_do<15>" LOC="G19" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+
+NET "lbus_wrn"    LOC="G20" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+NET "lbus_rdn"    LOC="H19" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+NET "lbus_rstn"   LOC="M21" |IOSTANDARD=LVCMOS15 |SLEW=QUIETIO |DRIVE=2;
+
+#NET "hpic_clk_p"    LOC="K21" |IOSTANDARD=DIFF_HSTL_I;
+#NET "hpic_clk_n"    LOC="K22" |IOSTANDARD=DIFF_HSTL_I;
+#NET "hpic_dq_p<0>"  LOC="D21" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<0>"  LOC="D22" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<1>"  LOC="C19" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<1>"  LOC="B20" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<2>"  LOC="B21" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<2>"  LOC="B22" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<3>"  LOC="D19" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<3>"  LOC="D20" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<4>"  LOC="C20" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<4>"  LOC="C22" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<5>"  LOC="F18" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<5>"  LOC="F19" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<6>"  LOC="A20" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<6>"  LOC="A21" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<7>"  LOC="F21" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<7>"  LOC="F22" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<8>"  LOC="K20" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<8>"  LOC="K19" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<9>"  LOC="H21" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<9>"  LOC="H22" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<10>" LOC="M20" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<10>" LOC="L19" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<11>" LOC="J20" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<11>" LOC="J22" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<12>" LOC="H20" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<12>" LOC="J19" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<13>" LOC="L20" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<13>" LOC="L22" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<14>" LOC="E20" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<14>" LOC="E22" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<15>" LOC="G19" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<15>" LOC="F20" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<16>" LOC="G20" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<16>" LOC="G22" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<17>" LOC="H19" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<17>" LOC="H18" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_p<18>" LOC="M21" |IOSTANDARD=LVCMOS15;
+#NET "hpic_dq_n<18>" LOC="M22" |IOSTANDARD=LVCMOS15;
+
+#######################################
+# Kintex-7 HRIC (LVCMOS25 or LVDS_25) #
+#######################################
+NET "lbus_di_a<0>"  LOC="D9"  |IOSTANDARD=LVCMOS25;
+NET "lbus_di_a<1>"  LOC="C15" |IOSTANDARD=LVCMOS25;
+NET "lbus_di_a<2>"  LOC="E16" |IOSTANDARD=LVCMOS25;
+NET "lbus_di_a<3>"  LOC="B14" |IOSTANDARD=LVCMOS25;
+NET "lbus_di_a<4>"  LOC="C17" |IOSTANDARD=LVCMOS25;
+NET "lbus_di_a<5>"  LOC="D7"  |IOSTANDARD=LVCMOS25;
+NET "lbus_di_a<6>"  LOC="B16" |IOSTANDARD=LVCMOS25;
+NET "lbus_di_a<7>"  LOC="B6"  |IOSTANDARD=LVCMOS25;
+NET "lbus_di_a<8>"  LOC="B10" |IOSTANDARD=LVCMOS25;
+NET "lbus_di_a<9>"  LOC="B12" |IOSTANDARD=LVCMOS25;
+NET "lbus_di_a<10>" LOC="C7"  |IOSTANDARD=LVCMOS25;
+NET "lbus_di_a<11>" LOC="D14" |IOSTANDARD=LVCMOS25;
+NET "lbus_di_a<12>" LOC="D15" |IOSTANDARD=LVCMOS25;
+NET "lbus_di_a<13>" LOC="C13" |IOSTANDARD=LVCMOS25;
+NET "lbus_di_a<14>" LOC="D10" |IOSTANDARD=LVCMOS25;
+NET "lbus_di_a<15>" LOC="D6"  |IOSTANDARD=LVCMOS25;
+
+#NET "hric_dq_p<0>"  LOC="D9"  |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<0>"  LOC="C8"  |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<1>"  LOC="C15" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<1>"  LOC="A15" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<2>"  LOC="E16" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<2>"  LOC="D17" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<3>"  LOC="B14" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<3>"  LOC="A14" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<4>"  LOC="C17" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<4>"  LOC="A17" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<5>"  LOC="D7"  |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<5>"  LOC="D8"  |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<6>"  LOC="B16" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<6>"  LOC="A16" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<7>"  LOC="B6"  |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<7>"  LOC="A6"  |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<8>"  LOC="B10" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<8>"  LOC="A10" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<9>"  LOC="B12" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<9>"  LOC="A12" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<10>" LOC="C7"  |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<10>" LOC="A7"  |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<11>" LOC="D14" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<11>" LOC="C14" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<12>" LOC="D15" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<12>" LOC="C16" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<13>" LOC="C13" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<13>" LOC="A13" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<14>" LOC="D10" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<14>" LOC="C10" |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<15>" LOC="D6"  |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<15>" LOC="C6"  |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<16>" LOC="C5"  |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<16>" LOC="A5"  |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<17>" LOC="B8"  |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<17>" LOC="A8"  |IOSTANDARD=LVDS_25;
+#NET "hric_dq_p<18>" LOC="C9"  |IOSTANDARD=LVDS_25;
+#NET "hric_dq_n<18>" LOC="A9"  |IOSTANDARD=LVDS_25;
+
+#------------------------------------------------ FMC
+#############################
+# FMC (LVDS_25 or LVCMOS25) #
+#############################
+#NET "fmc_lpc_clk_m2c_p<0>" LOC="K5" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_clk_m2c_n<0>" LOC="K4" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_clk_m2c_p<1>" LOC="J3" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_clk_m2c_n<1>" LOC="J1" |IOSTANDARD=LVCMOS25;
+
+#NET "fmc_lpc_la_p<0>"  LOC="Y11"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<0>"  LOC="AB11" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<1>"  LOC="W12"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<1>"  LOC="Y12"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<2>"  LOC="AA2"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<2>"  LOC="AB2"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<3>"  LOC="Y3"   |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<3>"  LOC="AB3"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<4>"  LOC="AA4"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<4>"  LOC="AB4"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<5>"  LOC="W9"   |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<5>"  LOC="Y8"   |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<6>"  LOC="U9"   |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<6>"  LOC="V9"   |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<7>"  LOC="AA8"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<7>"  LOC="AB8"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<8>"  LOC="U6"   |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<8>"  LOC="V5"   |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<9>"  LOC="Y9"   |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<9>"  LOC="AB9"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<10>" LOC="W10"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<10>" LOC="Y10"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<11>" LOC="W8"   |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<11>" LOC="V7"   |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<12>" LOC="AA10" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<12>" LOC="AB10" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<13>" LOC="R11"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<13>" LOC="T11"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<14>" LOC="V11"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<14>" LOC="W11"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<15>" LOC="T14"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<15>" LOC="R13"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<16>" LOC="V13"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<16>" LOC="W13"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<17>" LOC="AA12" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<17>" LOC="AB12" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<18>" LOC="Y13"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<18>" LOC="AB13" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<19>" LOC="U17"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<19>" LOC="U16"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<20>" LOC="T16"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<20>" LOC="T15"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<21>" LOC="Y15"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<21>" LOC="AB15" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<22>" LOC="AA14" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<22>" LOC="AB14" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<23>" LOC="W14"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<23>" LOC="Y14"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<24>" LOC="Y17"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<24>" LOC="AB17" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<25>" LOC="AA16" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<25>" LOC="AB16" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<26>" LOC="V17"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<26>" LOC="W17"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<27>" LOC="T18"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<27>" LOC="T17"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<28>" LOC="W18"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<28>" LOC="Y18"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<29>" LOC="R16"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<29>" LOC="R15"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<30>" LOC="Y19"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<30>" LOC="AB19" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<31>" LOC="AA18" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<31>" LOC="AB18" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<32>" LOC="AA21" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<32>" LOC="AB21" |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_p<33>" LOC="V19"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_lpc_la_n<33>" LOC="V18"  |IOSTANDARD=LVCMOS25;
+
+#NET "fmc_pg_en"   LOC="R8"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_prsnt_b" LOC="Y2"  |IOSTANDARD=LVCMOS25;
+#NET "fmc_scl"     LOC="V15" |IOSTANDARD=LVCMOS25;
+#NET "fmc_sda"     LOC="T7"  |IOSTANDARD=LVCMOS25;
+
+#------------------------------------------------ Other
+#########
+# OTHER #
+#########
+#NET "fan_pwm"    LOC="N19" |IOSTANDARD=LVCMOS15;
+#NET "rsvio_p<0>" LOC="N6"  |IOSTANDARD=LVCMOS25;
+#NET "rsvio_n<0>" LOC="N7"  |IOSTANDARD=LVCMOS25;
+
+####################
+# LX45 unused pins #
+####################
+CONFIG PROHIBIT="Y16";
+CONFIG PROHIBIT="W15";
+CONFIG PROHIBIT="T12";
+CONFIG PROHIBIT="U12";
+CONFIG PROHIBIT="T8";
+CONFIG PROHIBIT="U8";
+CONFIG PROHIBIT="T10";
+CONFIG PROHIBIT="U10";
+CONFIG PROHIBIT="W6";
+CONFIG PROHIBIT="Y6";
+CONFIG PROHIBIT="Y5";
+CONFIG PROHIBIT="AB5";
+
+#####################
+# LX100 unused pins #
+#####################
+CONFIG PROHIBIT="D12";
+CONFIG PROHIBIT="D13";
+CONFIG PROHIBIT="E10";
+CONFIG PROHIBIT="E12";
+CONFIG PROHIBIT="E14";
+CONFIG PROHIBIT="E8";
+CONFIG PROHIBIT="F10";
+CONFIG PROHIBIT="F12";
+CONFIG PROHIBIT="F13";
+CONFIG PROHIBIT="F14";
+CONFIG PROHIBIT="F15";
+CONFIG PROHIBIT="F8";
+CONFIG PROHIBIT="F9";
+CONFIG PROHIBIT="G11";
+CONFIG PROHIBIT="G13";
+CONFIG PROHIBIT="G8";
+CONFIG PROHIBIT="G9";
+CONFIG PROHIBIT="H10";
+CONFIG PROHIBIT="H11";
+CONFIG PROHIBIT="H12";
+CONFIG PROHIBIT="H13";
+CONFIG PROHIBIT="H14";

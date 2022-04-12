@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : mkAES
+Version: O-2018.06-SP5-4
+Date   : Mon Jan 31 16:15:50 2022
+****************************************
+
+
+Library(s) Used:
+
+    gscl45nm (File: /home/surya/gscl45nm.db)
+
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  23.6735 mW   (91%)
+  Net Switching Power  =   2.2482 mW    (9%)
+                         ---------
+Total Dynamic Power    =  25.9217 mW  (100%)
+
+Cell Leakage Power     = 514.6655 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register          21.0930            0.1997        1.6257e+05           21.4553  (  81.16%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      2.5808            2.0485        3.5210e+05            4.9814  (  18.84%)
+--------------------------------------------------------------------------------------------------
+Total             23.6738 mW         2.2482 mW     5.1467e+05 nW        26.4366 mW
+1

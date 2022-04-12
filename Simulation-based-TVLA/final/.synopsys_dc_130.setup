@@ -1,0 +1,6 @@
+set search_path [list . /home/surya/]
+set link_library {* /home/surya/gscl45nm.db }
+set physical_library ""
+set target_library {"/home/surya/gscl45nm.db"}
+set synthetic_library ""
+
