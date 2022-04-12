@@ -13,6 +13,10 @@ TVLA aims to provide detection of information leakage using statistical analysis
 
 ![TVLA_flow](https://user-images.githubusercontent.com/69968227/162927322-a7de09bd-0b09-4ebb-ab7c-b41726e1a122.png)
 
+## Contents of this repository
+1. Normal AES - source codes for typical AES accelerator
+2. Threshold AES - source codes for threshold AES accelerator
+
 ## Side-channel evaluation methodology
 The procedure followed here is for non-specific TVLA test on an FPGA.
 1. **Make a wrapper module for the accelerators to feed the inputs**:  
