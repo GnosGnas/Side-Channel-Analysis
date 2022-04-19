@@ -1,6 +1,9 @@
 # Side-Channel-Analysis
 ####// More updates to be added
 
+### Aim of the project:
+To evaluate Shakti's AES accelerators using *Test Vector Leakage Assessment*. Other experiments were also performed and are part of this repository. The project related work can be found in Emulation-based-TVLA/AES-with-wrapper.
+
 ## Overview of SASEBO-GIII Board: 
 The SASEBO-GIII is a successor of SASEBO-GII board, and is for further side-channel attack experimentation. 
 The board has Xilinx 28-nm Kintex-7 FPGA device, which enables advanced measurement with on-the-edge 
