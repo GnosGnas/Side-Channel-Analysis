@@ -42,7 +42,8 @@ be confirmed only by performing side-channel attacks. More details can be found 
 T-value is given by, $t=\frac{\mu_A - \mu_B}{\sqrt{\frac{\sigma_A^{2}}{n_A}+\frac{\sigma_B^{2}}{n_B}}}.$  
 where A and B correspond to the fixed and random dataset.
 
-## 
+## Evaluation of Shakti's accelerators:
+///To be added soon
 
 
 
