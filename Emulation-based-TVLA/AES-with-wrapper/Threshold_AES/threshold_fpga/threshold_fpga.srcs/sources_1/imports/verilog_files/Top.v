@@ -14,7 +14,7 @@ Usage:
 2. For the FPGA, use input clock frequency as 200MHz and output as 5 MHz
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
-`define WrapperModule mkAES_Wrapper2
+`define WrapperModule mkAES_Wrapper1
 
 module Top( 
     input CLK_P,

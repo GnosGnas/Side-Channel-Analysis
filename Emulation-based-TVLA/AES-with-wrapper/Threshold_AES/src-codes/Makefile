@@ -2,7 +2,7 @@
 ## Author: Surya Prasad S (EE19B121)
 
 # Variables for details related to the files
-TOP_MODULE    := mkAES_Wrapper2
+TOP_MODULE    := mkAES_Wrapper1
 TOP_FILE      := aes_wrapper.bsv
 BSV_BUILD     := bsv_build
 VERILOG_FILES := verilog_files

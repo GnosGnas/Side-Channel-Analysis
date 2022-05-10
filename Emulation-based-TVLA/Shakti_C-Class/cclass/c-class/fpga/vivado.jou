@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 17 15:16:23 2020
+# Process ID: 25223
+# Current directory: /inner_space/shakti/correlator/c-class/fpga
+# Command line: vivado
+# Log file: /inner_space/shakti/correlator/c-class/fpga/vivado.log
+# Journal file: /inner_space/shakti/correlator/c-class/fpga/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_1 . -part xc7a200tfbg676-2
+set_property board_part xilinx.com:ac701:part0:1.4 [current_project]
+add_files -norecurse {/inner_space/shakti/correlator/c-class/base-sim/verilog/vpi_wrapper_get_frame.h /inner_space/shakti/correlator/c-class/base-sim/verilog/vpi_wrapper_send_tdo.h /inner_space/shakti/correlator/c-class/base-sim/verilog/vpi_wrapper_init_rbb_jtag.h}
+add_files -norecurse {/inner_space/shakti/correlator/c-class/base-sim/verilog/MakeClock.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_hasCSRPermission.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp2.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp4.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp6.v /inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO20.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkfpu.v /inner_space/shakti/correlator/c-class/base-sim/verilog/RevertReg.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkcsr.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkriscv.v /inner_space/shakti/correlator/c-class/base-sim/verilog/UngatedClockMux.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkicache.v /inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO2.v /inner_space/shakti/correlator/c-class/base-sim/verilog/SyncRegister.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkSoc.v /inner_space/shakti/correlator/c-class/base-sim/verilog/BRAM2.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkimem.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage5.v /inner_space/shakti/correlator/c-class/base-sim/verilog/signedmul.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage3.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_decode_word32.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkcclass_axi4.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage1.v /inner_space/shakti/correlator/c-class/base-sim/verilog/SyncResetA.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkregisterfile.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkfwding.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_daisy.v /inner_space/shakti/correlator/c-class/base-sim/verilog/BRAM1Load.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_address_valid.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkitlb.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_csr_op.v /inner_space/shakti/correlator/c-class/base-sim/verilog/MakeReset0.v /inner_space/shakti/correlator/c-class/base-sim/verilog/SyncReset0.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkTbSoc.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkmbox.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkrestoring_div.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkinstance.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp7.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkfa_itlb.v /inner_space/shakti/correlator/c-class/base-sim/verilog/ResetEither.v /inner_space/shakti/correlator/c-class/base-sim/verilog/SizedFIFO.v /inner_space/shakti/correlator/c-class/base-sim/verilog/SyncHandshake.v /inner_space/shakti/correlator/c-class/base-sim/verilog/RegFileLoad.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_decoder_func_32.v /inner_space/shakti/correlator/c-class/base-sim/verilog/MakeResetA.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkriscvDebug013.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkmulticycle_alu.v /inner_space/shakti/correlator/c-class/base-sim/verilog/RegFile.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_valid_csr_access.v /inner_space/shakti/correlator/c-class/base-sim/verilog/Counter.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp1.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkbpu.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp3.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp5.v /inner_space/shakti/correlator/c-class/base-sim/verilog/BRAM2BELoad.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mksign_dump.v /inner_space/shakti/correlator/c-class/base-sim/verilog/BRAM2BE.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_chk_interrupt.v /inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO1.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_single_div.v /inner_space/shakti/correlator/c-class/base-sim/verilog/FIFOL1.v /inner_space/shakti/correlator/c-class/base-sim/verilog/ClockInverter.v /inner_space/shakti/correlator/c-class/base-sim/verilog/SyncFIFO.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage4.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage2.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_alu.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage0.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkfa_dtlb.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkcombo_mul.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkdcache.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkdmem.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_decompress.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkjtagdtm.v /inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO10.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkSencoder.v /inner_space/shakti/correlator/c-class/base-sim/verilog/bram_1rw.v /inner_space/shakti/correlator/c-class/base-sim/verilog/bram_1r1w.v /inner_space/shakti/correlator/c-class/base-sim/verilog/SyncFIFO1.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top mkSoc [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+source mkTbSoc.tcl
+add_force {/mkTbSoc/CLK} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/mkTbSoc/RST_N} -radix hex {0 0ns}
+run 10 ns
+run 10 ns
+add_force {/mkTbSoc/CLK} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+add_force {/mkTbSoc/RST_N} -radix hex {1 0ns}
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 100 us
+run 1000 us
+close_sim
+launch_simulation
+source mkTbSoc.tcl
+add_force {/mkTbSoc/CLK} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/mkTbSoc/RST_N} -radix hex {0 0ns}
+run 1000 ns
+add_force {/mkTbSoc/RST_N} -radix hex {1 0ns}
+run 1000 ns
+run 1000 ns
+run 1000 us
+close_sim
+launch_simulation
+source mkTbSoc.tcl
+add_force {/mkTbSoc/CLK} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/mkTbSoc/RST_N} -radix hex {0 0ns}
+run 1000 ns
+add_force {/mkTbSoc/RST_N} -radix hex {1 0ns}
+run 1000 us
+close_sim

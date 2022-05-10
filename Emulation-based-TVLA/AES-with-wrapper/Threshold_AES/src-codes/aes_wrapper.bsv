@@ -28,9 +28,9 @@ import RegFile::*;
 
 
 // Parameters to control the process
-typedef 4 N_inputs;
-//typedef 3000000 Delay; 				// This corresponds to 600ms delay when the FPGA is run at 5MHz
-typedef 3 Delay; 					// This corresponds to 600ms delay when the FPGA is run at 5MHz
+typedef 50000 N_inputs;
+typedef 3000000 Delay; 				// This corresponds to 600ms delay when the FPGA is run at 5MHz
+//typedef 3 Delay; 					// This corresponds to 600ms delay when the FPGA is run at 5MHz
 Bool decrypt_bool = True; 			// True for decryption and False for encryption
 Bit#(256) key_const   = 256'h0123456789abcdef123456789abcdef023456789abcdef013456789abcdef012;	// Fixed Key
 Bit#(128) fixed_inp   = 128'hda39a3ee5e6b4b0d3255bfef95601890;									// Fixed input

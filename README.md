@@ -4,6 +4,12 @@
 ### Aim of the project:
 To evaluate Shakti's AES accelerators using *Test Vector Leakage Assessment*. Other experiments were also performed and are part of this repository. The project related work can be found in Emulation-based-TVLA/AES-with-wrapper.
 
+## Contents of this repository:
+1. sasebo_giii files provided by the vendor, Sakura, at https://satoh.cs.uec.ac.jp/SAKURA/hardware/SAKURA-X.html 
+2. Differential Power Analysis
+3. Simulation based TVLA for AES implementations
+4. Hardware (emulation) based TVLA for AES implementations
+
 ## Overview of SASEBO-GIII Board: 
 The SASEBO-GIII is a successor of SASEBO-GII board, and is for further side-channel attack experimentation. 
 The board has Xilinx 28-nm Kintex-7 FPGA device, which enables advanced measurement with on-the-edge 
@@ -57,11 +63,7 @@ set_property -dict {PACKAGE_PIN P24 IOSTANDARD LVCMOS25} [get_ports gpio2]
 # General configuration
 set_property BITSTREAM.General.UnconstrainedPins {Allow} [current_design]
 ```
-## Contents of this repository:
-1. sasebo_giii files provided by the vendor, Sakura, at https://satoh.cs.uec.ac.jp/SAKURA/hardware/SAKURA-X.html 
-2. Differential Power Analysis
-3. Simulation based TVLA for AES implementations
-4. Hardware (emulation) based TVLA for AES implementations
+
 
 
 ## AES algo for both encryption and decryption:

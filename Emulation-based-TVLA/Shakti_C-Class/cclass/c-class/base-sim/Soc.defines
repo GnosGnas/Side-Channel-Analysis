@@ -1,0 +1,64 @@
+`define Debug_master_num 0
+`define Mem_master_num 1
+`define IO_master_num 2
+`define Fetch_master_num 3
+`define DMA_master_num 4
+
+`ifdef simulate
+  `define Sign_master_num 5
+  `define Num_Masters 6
+`else
+  `define Num_Masters 5
+`endif
+
+`define Memory_slave_num 0
+`define Uart_slave_num 1
+`define Clint_slave_num 2
+`define Debug_slave_num 3
+//`define I2C_slave_num 4
+`define PLIC_slave_num 4
+`define GPIO_slave_num 5
+`define Correlator_slave_num 6
+`define Err_slave_num 7
+`define AES_slave_num 12
+`define DMA_slave_num 9
+`define SHA_slave_num 10
+`define RSA_slave_num 11
+`define AESBUF_slave_num 8
+`ifdef simulate
+  `define Sign_slave_num 13
+  `define Num_Slaves 14
+`else
+  `define Num_Slaves 13
+`endif
+
+`define MemoryBase  'h8000_0000
+`define MemoryEnd   'h87FF_FFFF
+`define UartBase    'h11300
+`define UartEnd     'h11340
+`define ClintBase   'h0200_0000
+`define ClintEnd    'h020B_FFFF
+`define DebugBase   'h0000_0000
+`define DebugEnd    'h0000_000F
+//`define I2CBase    	'h020C_0000
+//`define I2CEnd     	'h020C_00FF
+`define PLICBase	'h020D_0000
+`define PLICEnd		'h020D_00FF
+`define GPIOBase	'h0210_0000
+`define GPIOEnd		'h0210_00FF
+`define CorrelatorBase 'h5000_0000
+`define CorrelatorEnd  'h5FFF_FFFF
+`ifdef simulate
+  `define SignBase 'h0002_0000
+  `define SignEnd  'h0002_000C
+`endif
+`define AESBase 'h0002_1000
+`define AESEnd  'h0002_10FF
+`define DMABase 'h0002_1100
+`define DMAEnd  'h0002_11FF
+`define SHABase 'h0002_1200
+`define SHAEnd  'h0002_12FF
+`define RSABase 'h0002_1300
+`define RSAEnd  'h0002_13FF
+`define AESBUFBase 'h0002_1400
+`define AESBUFEnd  'h0002_14FF

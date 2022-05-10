@@ -1,0 +1,72 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../base-sim/verilog" \
+"../../../../../base-sim/verilog/BRAM2BELoad.v" \
+"../../../../../base-sim/verilog/ClockInverter.v" \
+"../../../../../base-sim/verilog/Counter.v" \
+"../../../../../base-sim/verilog/FIFO1.v" \
+"../../../../../base-sim/verilog/FIFO10.v" \
+"../../../../../base-sim/verilog/FIFO2.v" \
+"../../../../../base-sim/verilog/FIFOL1.v" \
+"../../../../../base-sim/verilog/MakeClock.v" \
+"../../../../../base-sim/verilog/MakeReset0.v" \
+"../../../../../base-sim/verilog/RegFile.v" \
+"../../../../../base-sim/verilog/ResetEither.v" \
+"../../../../../base-sim/verilog/RevertReg.v" \
+"../../../../../base-sim/verilog/SizedFIFO.v" \
+"../../../../../base-sim/verilog/SyncFIFO1.v" \
+"../../../../../base-sim/verilog/SyncReset0.v" \
+"../../../../../base-sim/verilog/bram_1rw.v" \
+"../../../../../base-sim/verilog/mkSoc.v" \
+"../../../../../base-sim/verilog/mk_csr_daisy.v" \
+"../../../../../base-sim/verilog/mk_csr_grp1.v" \
+"../../../../../base-sim/verilog/mk_csr_grp2.v" \
+"../../../../../base-sim/verilog/mk_csr_grp3.v" \
+"../../../../../base-sim/verilog/mk_csr_grp4.v" \
+"../../../../../base-sim/verilog/mk_csr_grp5.v" \
+"../../../../../base-sim/verilog/mk_csr_grp6.v" \
+"../../../../../base-sim/verilog/mk_csr_grp7.v" \
+"../../../../../base-sim/verilog/mkbpu.v" \
+"../../../../../base-sim/verilog/mkcclass_axi4.v" \
+"../../../../../base-sim/verilog/mkcombo_mul.v" \
+"../../../../../base-sim/verilog/mkcsr.v" \
+"../../../../../base-sim/verilog/mkdcache.v" \
+"../../../../../base-sim/verilog/mkdmem.v" \
+"../../../../../base-sim/verilog/mkfa_dtlb.v" \
+"../../../../../base-sim/verilog/mkfa_itlb.v" \
+"../../../../../base-sim/verilog/mkfpu.v" \
+"../../../../../base-sim/verilog/mkfwding.v" \
+"../../../../../base-sim/verilog/mkicache.v" \
+"../../../../../base-sim/verilog/mkimem.v" \
+"../../../../../base-sim/verilog/mkitlb.v" \
+"../../../../../base-sim/verilog/mkjtagdtm.v" \
+"../../../../../base-sim/verilog/mkmbox.v" \
+"../../../../../base-sim/verilog/mkmulticycle_alu.v" \
+"../../../../../base-sim/verilog/mkregisterfile.v" \
+"../../../../../base-sim/verilog/mkrestoring_div.v" \
+"../../../../../base-sim/verilog/mkriscv.v" \
+"../../../../../base-sim/verilog/mkriscvDebug013.v" \
+"../../../../../base-sim/verilog/mksign_dump.v" \
+"../../../../../base-sim/verilog/mkstage0.v" \
+"../../../../../base-sim/verilog/mkstage1.v" \
+"../../../../../base-sim/verilog/mkstage2.v" \
+"../../../../../base-sim/verilog/mkstage3.v" \
+"../../../../../base-sim/verilog/mkstage4.v" \
+"../../../../../base-sim/verilog/mkstage5.v" \
+"../../../../../base-sim/verilog/module_address_valid.v" \
+"../../../../../base-sim/verilog/module_chk_interrupt.v" \
+"../../../../../base-sim/verilog/module_decode_word32.v" \
+"../../../../../base-sim/verilog/module_decoder_func_32.v" \
+"../../../../../base-sim/verilog/module_fn_alu.v" \
+"../../../../../base-sim/verilog/module_fn_csr_op.v" \
+"../../../../../base-sim/verilog/module_fn_decompress.v" \
+"../../../../../base-sim/verilog/module_fn_single_div.v" \
+"../../../../../base-sim/verilog/module_hasCSRPermission.v" \
+"../../../../../base-sim/verilog/module_valid_csr_access.v" \
+"../../../../../base-sim/verilog/signedmul.v" \
+"../../../../../base-sim/verilog/mkTbSoc.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -2,15 +2,15 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Sat Apr  9 17:30:46 2022
-# Process ID: 170331
+# Start of session at: Sun Apr 17 15:10:28 2022
+# Process ID: 16009
 # Current directory: /home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.runs/synth_1
 # Command line: vivado -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
 # Log file: /home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.runs/synth_1/Top.vds
 # Journal file: /home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source Top.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2084.582 ; gain = 0.047 ; free physical = 1658 ; free virtual = 9328
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2084.055 ; gain = 0.047 ; free physical = 633 ; free virtual = 9762
 Command: synth_design -top Top -part xc7k160tfbg676-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
@@ -18,12 +18,12 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160
 INFO: [Device 21-403] Loading part xc7k160tfbg676-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 170630
+INFO: [Synth 8-7075] Helper process launched with PID 16136
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2084.707 ; gain = 0.000 ; free physical = 657 ; free virtual = 8005
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 2084.180 ; gain = 0.000 ; free physical = 743 ; free virtual = 9248
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.srcs/sources_1/imports/verilog_files/Top.v:19]
-INFO: [Synth 8-6157] synthesizing module 'mkAES_Wrapper2' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/src-codes/verilog_files/mkAES_Wrapper2.v:35]
+INFO: [Synth 8-6157] synthesizing module 'mkAES_Wrapper1' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/src-codes/verilog_files/mkAES_Wrapper1.v:35]
 INFO: [Synth 8-6157] synthesizing module 'mkinv_sbox_threshold' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/src-codes/verilog_files/mkinv_sbox_threshold.v:36]
 INFO: [Synth 8-6157] synthesizing module 'inv_sbox' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/src-codes/inv_sbox.v:541]
 INFO: [Synth 8-6157] synthesizing module 'cob' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/src-codes/inv_sbox.v:449]
@@ -74,28 +74,28 @@ INFO: [Synth 8-6155] done synthesizing module 'sbox' (23#1) [/home/surya/Desktop
 INFO: [Synth 8-6155] done synthesizing module 'mksbox_threshold' (24#1) [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/src-codes/verilog_files/mksbox_threshold.v:36]
 INFO: [Synth 8-6157] synthesizing module 'mkRconRom' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/src-codes/verilog_files/mkRconRom.v:32]
 INFO: [Synth 8-6155] done synthesizing module 'mkRconRom' (25#1) [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/src-codes/verilog_files/mkRconRom.v:32]
-INFO: [Synth 8-6155] done synthesizing module 'mkAES_Wrapper2' (26#1) [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/src-codes/verilog_files/mkAES_Wrapper2.v:35]
-WARNING: [Synth 8-689] width (1) of port connection 'output_fix' does not match port width (128) of module 'mkAES_Wrapper2' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.srcs/sources_1/imports/verilog_files/Top.v:33]
-WARNING: [Synth 8-7071] port 'RDY_trigger_pin' of module 'mkAES_Wrapper2' is unconnected for instance 'M' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.srcs/sources_1/imports/verilog_files/Top.v:30]
-WARNING: [Synth 8-7071] port 'RDY_done_signal' of module 'mkAES_Wrapper2' is unconnected for instance 'M' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.srcs/sources_1/imports/verilog_files/Top.v:30]
-WARNING: [Synth 8-7071] port 'RDY_output_fix' of module 'mkAES_Wrapper2' is unconnected for instance 'M' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.srcs/sources_1/imports/verilog_files/Top.v:30]
-WARNING: [Synth 8-7023] instance 'M' of module 'mkAES_Wrapper2' has 8 connections declared, but only 5 given [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.srcs/sources_1/imports/verilog_files/Top.v:30]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.runs/synth_1/.Xil/Vivado-170331-surya-Legion/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (27#1) [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.runs/synth_1/.Xil/Vivado-170331-surya-Legion/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mkAES_Wrapper1' (26#1) [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/src-codes/verilog_files/mkAES_Wrapper1.v:35]
+WARNING: [Synth 8-689] width (1) of port connection 'output_fix' does not match port width (128) of module 'mkAES_Wrapper1' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.srcs/sources_1/imports/verilog_files/Top.v:33]
+WARNING: [Synth 8-7071] port 'RDY_trigger_pin' of module 'mkAES_Wrapper1' is unconnected for instance 'M' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.srcs/sources_1/imports/verilog_files/Top.v:30]
+WARNING: [Synth 8-7071] port 'RDY_done_signal' of module 'mkAES_Wrapper1' is unconnected for instance 'M' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.srcs/sources_1/imports/verilog_files/Top.v:30]
+WARNING: [Synth 8-7071] port 'RDY_output_fix' of module 'mkAES_Wrapper1' is unconnected for instance 'M' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.srcs/sources_1/imports/verilog_files/Top.v:30]
+WARNING: [Synth 8-7023] instance 'M' of module 'mkAES_Wrapper1' has 8 connections declared, but only 5 given [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.srcs/sources_1/imports/verilog_files/Top.v:30]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.runs/synth_1/.Xil/Vivado-16009-surya-Legion/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (27#1) [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.runs/synth_1/.Xil/Vivado-16009-surya-Legion/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'Top' (28#1) [/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.srcs/sources_1/imports/verilog_files/Top.v:19]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2210.582 ; gain = 125.875 ; free physical = 1136 ; free virtual = 8485
+Finished RTL Elaboration : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 2210.023 ; gain = 125.844 ; free physical = 624 ; free virtual = 9209
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2225.426 ; gain = 140.719 ; free physical = 1097 ; free virtual = 8447
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 2224.867 ; gain = 140.688 ; free physical = 601 ; free virtual = 9215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2225.426 ; gain = 140.719 ; free physical = 1097 ; free virtual = 8447
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 2224.867 ; gain = 140.688 ; free physical = 601 ; free virtual = 9215
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2225.426 ; gain = 0.000 ; free physical = 1024 ; free virtual = 8374
+Netlist sorting complete. Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:00.40 . Memory (MB): peak = 2224.867 ; gain = 0.000 ; free physical = 564 ; free virtual = 9192
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -110,20 +110,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2385.238 ; gain = 0.000 ; free physical = 874 ; free virtual = 8225
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2382.680 ; gain = 0.000 ; free physical = 441 ; free virtual = 9125
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2385.238 ; gain = 0.000 ; free physical = 873 ; free virtual = 8223
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2382.680 ; gain = 0.000 ; free physical = 440 ; free virtual = 9125
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 2385.238 ; gain = 300.531 ; free physical = 683 ; free virtual = 8034
+Finished Constraint Validation : Time (s): cpu = 00:01:04 ; elapsed = 00:01:17 . Memory (MB): peak = 2382.680 ; gain = 298.500 ; free physical = 432 ; free virtual = 9200
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k160tfbg676-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 2385.238 ; gain = 300.531 ; free physical = 679 ; free virtual = 8030
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:04 ; elapsed = 00:01:17 . Memory (MB): peak = 2382.680 ; gain = 298.500 ; free physical = 432 ; free virtual = 9200
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -134,10 +134,10 @@ Applied set_property IO_BUFFER_TYPE = NONE for CLK_P. (constraint file  /home/su
 Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK_P. (constraint file  /home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 8).
 Applied set_property DONT_TOUCH = true for cl. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 2385.238 ; gain = 300.531 ; free physical = 673 ; free virtual = 8024
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:17 . Memory (MB): peak = 2382.680 ; gain = 298.500 ; free physical = 431 ; free virtual = 9200
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 2385.238 ; gain = 300.531 ; free physical = 640 ; free virtual = 7753
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:30 ; elapsed = 00:01:44 . Memory (MB): peak = 2382.680 ; gain = 298.500 ; free physical = 262 ; free virtual = 9172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -152,25 +152,23 @@ Detailed RTL Component Info :
 +---XORs : 
 	   2 Input     32 Bit         XORs := 26    
 	   5 Input     32 Bit         XORs := 1     
-	   2 Input      8 Bit         XORs := 26    
-	   4 Input      8 Bit         XORs := 2     
-	   6 Input      8 Bit         XORs := 5     
-	   3 Input      8 Bit         XORs := 2     
-	   9 Input      8 Bit         XORs := 1     
-	   8 Input      8 Bit         XORs := 5     
-	   7 Input      8 Bit         XORs := 4     
-	   5 Input      8 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 20    
+	   9 Input      8 Bit         XORs := 8     
+	   7 Input      8 Bit         XORs := 6     
+	   3 Input      8 Bit         XORs := 3     
+	   4 Input      8 Bit         XORs := 1     
+	   6 Input      8 Bit         XORs := 2     
 	   2 Input      4 Bit         XORs := 51    
 	   3 Input      4 Bit         XORs := 39    
 	   9 Input      4 Bit         XORs := 12    
-	   2 Input      1 Bit         XORs := 272   
-	   3 Input      1 Bit         XORs := 155   
-	   4 Input      1 Bit         XORs := 136   
-	   5 Input      1 Bit         XORs := 144   
+	   2 Input      1 Bit         XORs := 270   
+	   3 Input      1 Bit         XORs := 153   
+	   4 Input      1 Bit         XORs := 130   
+	   5 Input      1 Bit         XORs := 154   
+	   7 Input      1 Bit         XORs := 7     
+	   6 Input      1 Bit         XORs := 8     
 	  39 Input      1 Bit         XORs := 3     
 	  18 Input      1 Bit         XORs := 3     
-	   7 Input      1 Bit         XORs := 7     
-	   6 Input      1 Bit         XORs := 11    
 	  69 Input      1 Bit         XORs := 3     
 	  33 Input      1 Bit         XORs := 3     
 	   9 Input      1 Bit         XORs := 3     
@@ -183,34 +181,35 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 4     
 	                5 Bit    Registers := 2     
 	                4 Bit    Registers := 5     
-	                3 Bit    Registers := 3     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 28    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 27    
 +---Muxes : 
 	   4 Input  128 Bit        Muxes := 1     
-	   4 Input   32 Bit        Muxes := 6     
+	   2 Input   32 Bit        Muxes := 50    
+	   4 Input   32 Bit        Muxes := 4     
 	   3 Input   32 Bit        Muxes := 2     
-	   2 Input   32 Bit        Muxes := 48    
-	   5 Input   32 Bit        Muxes := 6     
 	   6 Input   32 Bit        Muxes := 1     
+	   5 Input   32 Bit        Muxes := 8     
 	   3 Input   31 Bit        Muxes := 2     
+	   4 Input   31 Bit        Muxes := 2     
 	   3 Input   30 Bit        Muxes := 2     
+	   4 Input   30 Bit        Muxes := 2     
 	   2 Input   24 Bit        Muxes := 12    
 	   2 Input   16 Bit        Muxes := 6     
-	   4 Input    8 Bit        Muxes := 3     
-	   2 Input    8 Bit        Muxes := 59    
 	   5 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 59    
+	   4 Input    8 Bit        Muxes := 3     
 	   4 Input    5 Bit        Muxes := 1     
 	   2 Input    5 Bit        Muxes := 3     
-	   2 Input    4 Bit        Muxes := 3     
-	   3 Input    4 Bit        Muxes := 2     
-	   8 Input    4 Bit        Muxes := 1     
 	   4 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 3     
+	   8 Input    4 Bit        Muxes := 1     
 	   3 Input    3 Bit        Muxes := 3     
-	   6 Input    3 Bit        Muxes := 2     
 	   2 Input    3 Bit        Muxes := 1     
-	   5 Input    3 Bit        Muxes := 1     
-	   4 Input    2 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 2     
 	   2 Input    1 Bit        Muxes := 7     
 	   4 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
@@ -229,25 +228,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:57 ; elapsed = 00:02:04 . Memory (MB): peak = 2385.238 ; gain = 300.531 ; free physical = 481 ; free virtual = 7640
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:42 ; elapsed = 00:04:00 . Memory (MB): peak = 2382.680 ; gain = 298.500 ; free physical = 351 ; free virtual = 9172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:06 ; elapsed = 00:02:15 . Memory (MB): peak = 2385.238 ; gain = 300.531 ; free physical = 338 ; free virtual = 7498
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:59 ; elapsed = 00:04:20 . Memory (MB): peak = 2382.680 ; gain = 298.500 ; free physical = 576 ; free virtual = 9415
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:07 ; elapsed = 00:02:16 . Memory (MB): peak = 2385.238 ; gain = 300.531 ; free physical = 356 ; free virtual = 7517
+Finished Timing Optimization : Time (s): cpu = 00:04:01 ; elapsed = 00:04:21 . Memory (MB): peak = 2382.680 ; gain = 298.500 ; free physical = 571 ; free virtual = 9409
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:14 ; elapsed = 00:02:23 . Memory (MB): peak = 2385.238 ; gain = 300.531 ; free physical = 335 ; free virtual = 7496
+Finished Technology Mapping : Time (s): cpu = 00:04:12 ; elapsed = 00:04:33 . Memory (MB): peak = 2382.680 ; gain = 298.500 ; free physical = 611 ; free virtual = 9450
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -265,37 +264,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:19 ; elapsed = 00:02:29 . Memory (MB): peak = 2385.238 ; gain = 300.531 ; free physical = 358 ; free virtual = 7519
+Finished IO Insertion : Time (s): cpu = 00:04:21 ; elapsed = 00:04:43 . Memory (MB): peak = 2382.680 ; gain = 298.500 ; free physical = 596 ; free virtual = 9435
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:19 ; elapsed = 00:02:29 . Memory (MB): peak = 2385.238 ; gain = 300.531 ; free physical = 358 ; free virtual = 7519
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:21 ; elapsed = 00:04:43 . Memory (MB): peak = 2382.680 ; gain = 298.500 ; free physical = 595 ; free virtual = 9435
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:20 ; elapsed = 00:02:29 . Memory (MB): peak = 2385.238 ; gain = 300.531 ; free physical = 356 ; free virtual = 7517
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:23 ; elapsed = 00:04:44 . Memory (MB): peak = 2382.680 ; gain = 298.500 ; free physical = 596 ; free virtual = 9435
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:20 ; elapsed = 00:02:30 . Memory (MB): peak = 2385.238 ; gain = 300.531 ; free physical = 356 ; free virtual = 7517
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:23 ; elapsed = 00:04:45 . Memory (MB): peak = 2382.680 ; gain = 298.500 ; free physical = 595 ; free virtual = 9435
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:20 ; elapsed = 00:02:30 . Memory (MB): peak = 2385.238 ; gain = 300.531 ; free physical = 355 ; free virtual = 7517
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:24 ; elapsed = 00:04:46 . Memory (MB): peak = 2382.680 ; gain = 298.500 ; free physical = 594 ; free virtual = 9434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:20 ; elapsed = 00:02:30 . Memory (MB): peak = 2385.238 ; gain = 300.531 ; free physical = 355 ; free virtual = 7516
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:24 ; elapsed = 00:04:46 . Memory (MB): peak = 2382.680 ; gain = 298.500 ; free physical = 594 ; free virtual = 9433
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -315,40 +314,40 @@ Report Cell Usage:
 |1     |clk_wiz |     1|
 |2     |CARRY4  |    16|
 |3     |LUT1    |     6|
-|4     |LUT2    |   332|
-|5     |LUT3    |   267|
-|6     |LUT4    |   440|
-|7     |LUT5    |   736|
-|8     |LUT6    |  1136|
-|9     |MUXF7   |    57|
-|10    |MUXF8   |    25|
-|11    |FDRE    |  2906|
+|4     |LUT2    |   339|
+|5     |LUT3    |   179|
+|6     |LUT4    |   547|
+|7     |LUT5    |   706|
+|8     |LUT6    |  1192|
+|9     |MUXF7   |    72|
+|10    |MUXF8   |    24|
+|11    |FDRE    |  2898|
 |12    |FDSE    |    47|
 |13    |IBUF    |     1|
 |14    |OBUF    |     3|
 |15    |OBUFT   |     1|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:20 ; elapsed = 00:02:30 . Memory (MB): peak = 2385.238 ; gain = 300.531 ; free physical = 355 ; free virtual = 7516
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:24 ; elapsed = 00:04:46 . Memory (MB): peak = 2382.680 ; gain = 298.500 ; free physical = 594 ; free virtual = 9433
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:14 ; elapsed = 00:02:24 . Memory (MB): peak = 2385.238 ; gain = 140.719 ; free physical = 407 ; free virtual = 7568
-Synthesis Optimization Complete : Time (s): cpu = 00:02:21 ; elapsed = 00:02:30 . Memory (MB): peak = 2385.238 ; gain = 300.531 ; free physical = 407 ; free virtual = 7568
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:09 ; elapsed = 00:04:31 . Memory (MB): peak = 2382.680 ; gain = 140.688 ; free physical = 646 ; free virtual = 9486
+Synthesis Optimization Complete : Time (s): cpu = 00:04:24 ; elapsed = 00:04:46 . Memory (MB): peak = 2382.680 ; gain = 298.500 ; free physical = 646 ; free virtual = 9486
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2385.238 ; gain = 0.000 ; free physical = 482 ; free virtual = 7643
-INFO: [Netlist 29-17] Analyzing 98 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2382.680 ; gain = 0.000 ; free physical = 717 ; free virtual = 9557
+INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'Top' is not ideal for floorplanning, since the cellview 'mkAES_Wrapper2' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+WARNING: [Netlist 29-101] Netlist 'Top' is not ideal for floorplanning, since the cellview 'mkAES_Wrapper1' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2406.246 ; gain = 0.000 ; free physical = 438 ; free virtual = 7600
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2395.680 ; gain = 0.000 ; free physical = 667 ; free virtual = 9506
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 71 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:38 ; elapsed = 00:02:44 . Memory (MB): peak = 2406.246 ; gain = 321.664 ; free physical = 588 ; free virtual = 7749
+synth_design: Time (s): cpu = 00:05:01 ; elapsed = 00:05:15 . Memory (MB): peak = 2395.680 ; gain = 311.625 ; free physical = 812 ; free virtual = 9652
 INFO: [Common 17-1381] The checkpoint '/home/surya/Desktop/sem_5/Diff-power-analysis/Side-Channel-Analysis/Emulation-based-TVLA/AES-with-wrapper/Threshold_AES/threshold_fpga/threshold_fpga.runs/synth_1/Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Apr  9 17:33:51 2022...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 17 15:16:31 2022...

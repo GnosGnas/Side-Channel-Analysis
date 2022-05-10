@@ -78,7 +78,6 @@ package aes;
 
 		rule encode(rg_state==Encode && !dr.roundDone() && kg.isRoundKeyReady(counter));
 			let getKeynum = counter;
-			$display($time, "keygened");
 			if(decrypt)
 				getKeynum = (maxround) - counter;
 			let lv_key <- kg.getKey(getKeynum);
@@ -118,7 +117,6 @@ package aes;
 			counter <= 1;
 			decrypt <= decrypttt;
 			Bit#(128) _key_ = keyyy[127:0];
-			$display($time, "encrp");
 			case(keyylenn)
 				Bit128 : maxround <=10;
 				Bit192 : begin

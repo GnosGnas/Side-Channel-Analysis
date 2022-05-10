@@ -4,7 +4,7 @@ current_instance cl
 set_property src_info {type:SCOPED_XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 create_clock -period 5.000 [get_ports -no_traverse {}]
 set_property src_info {type:SCOPED_XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
-create_generated_clock -source [get_ports clk_in1_p] -edges {1 2 3} -edge_shift {0.000 -0.833 -1.667} [get_ports {}]
+create_generated_clock -source [get_ports clk_in1_p] -edges {1 2 3} -edge_shift {0.000 97.500 195.000} [get_ports {}]
 current_instance
 set_property src_info {type:XDC file:2 line:9 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN AA3 IOSTANDARD LVDS} [get_ports CLK_P]

@@ -195,11 +195,13 @@ module mkAES_Wrapper2 (Wrapper_ifc);
 		end
 	endrule
 
-
-	// Setting Trigger high
+	/*
+	// Setting Trigger high - this can be uncommented and trigger becoming true can be removed in delay_rule
+	// May not affect the overall TVLA much as mod_state is still changing outside the trigger - needs to be confirmed
 	rule trigger_high ((mod_state == Process1) && (!block) && (!trigger));
 		trigger <= True;
 	endrule
+	*/
 
 	// Feeding inputs to the accelerator
 	rule process1_start ((mod_state == Process1) && (!block) && (trigger));

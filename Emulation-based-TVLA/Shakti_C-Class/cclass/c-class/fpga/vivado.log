@@ -1,0 +1,1241 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 17 15:16:23 2020
+# Process ID: 25223
+# Current directory: /inner_space/shakti/correlator/c-class/fpga
+# Command line: vivado
+# Log file: /inner_space/shakti/correlator/c-class/fpga/vivado.log
+# Journal file: /inner_space/shakti/correlator/c-class/fpga/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_1 . -part xc7a200tfbg676-2
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/scratch/hw_tools/vivado/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 6565.344 ; gain = 114.883 ; free physical = 29088 ; free virtual = 49469
+set_property board_part xilinx.com:ac701:part0:1.4 [current_project]
+add_files -norecurse {/inner_space/shakti/correlator/c-class/base-sim/verilog/vpi_wrapper_get_frame.h /inner_space/shakti/correlator/c-class/base-sim/verilog/vpi_wrapper_send_tdo.h /inner_space/shakti/correlator/c-class/base-sim/verilog/vpi_wrapper_init_rbb_jtag.h}
+add_files -norecurse {/inner_space/shakti/correlator/c-class/base-sim/verilog/MakeClock.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_hasCSRPermission.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp2.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp4.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp6.v /inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO20.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkfpu.v /inner_space/shakti/correlator/c-class/base-sim/verilog/RevertReg.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkcsr.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkriscv.v /inner_space/shakti/correlator/c-class/base-sim/verilog/UngatedClockMux.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkicache.v /inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO2.v /inner_space/shakti/correlator/c-class/base-sim/verilog/SyncRegister.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkSoc.v /inner_space/shakti/correlator/c-class/base-sim/verilog/BRAM2.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkimem.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage5.v /inner_space/shakti/correlator/c-class/base-sim/verilog/signedmul.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage3.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_decode_word32.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkcclass_axi4.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage1.v /inner_space/shakti/correlator/c-class/base-sim/verilog/SyncResetA.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkregisterfile.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkfwding.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_daisy.v /inner_space/shakti/correlator/c-class/base-sim/verilog/BRAM1Load.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_address_valid.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkitlb.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_csr_op.v /inner_space/shakti/correlator/c-class/base-sim/verilog/MakeReset0.v /inner_space/shakti/correlator/c-class/base-sim/verilog/SyncReset0.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkTbSoc.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkmbox.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkrestoring_div.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkinstance.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp7.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkfa_itlb.v /inner_space/shakti/correlator/c-class/base-sim/verilog/ResetEither.v /inner_space/shakti/correlator/c-class/base-sim/verilog/SizedFIFO.v /inner_space/shakti/correlator/c-class/base-sim/verilog/SyncHandshake.v /inner_space/shakti/correlator/c-class/base-sim/verilog/RegFileLoad.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_decoder_func_32.v /inner_space/shakti/correlator/c-class/base-sim/verilog/MakeResetA.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkriscvDebug013.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkmulticycle_alu.v /inner_space/shakti/correlator/c-class/base-sim/verilog/RegFile.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_valid_csr_access.v /inner_space/shakti/correlator/c-class/base-sim/verilog/Counter.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp1.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkbpu.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp3.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp5.v /inner_space/shakti/correlator/c-class/base-sim/verilog/BRAM2BELoad.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mksign_dump.v /inner_space/shakti/correlator/c-class/base-sim/verilog/BRAM2BE.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_chk_interrupt.v /inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO1.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_single_div.v /inner_space/shakti/correlator/c-class/base-sim/verilog/FIFOL1.v /inner_space/shakti/correlator/c-class/base-sim/verilog/ClockInverter.v /inner_space/shakti/correlator/c-class/base-sim/verilog/SyncFIFO.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage4.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage2.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_alu.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage0.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkfa_dtlb.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkcombo_mul.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkdcache.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkdmem.v /inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_decompress.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkjtagdtm.v /inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO10.v /inner_space/shakti/correlator/c-class/base-sim/verilog/mkSencoder.v /inner_space/shakti/correlator/c-class/base-sim/verilog/bram_1rw.v /inner_space/shakti/correlator/c-class/base-sim/verilog/bram_1r1w.v /inner_space/shakti/correlator/c-class/base-sim/verilog/SyncFIFO1.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property top mkSoc [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mkTbSoc' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj mkTbSoc_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/BRAM2BELoad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRAM2BELoad
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/ClockInverter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockInverter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO10
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFOL1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFOL1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/MakeClock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MakeClock
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/MakeReset0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MakeReset0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/ResetEither.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ResetEither
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/RevertReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RevertReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/SizedFIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SizedFIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/SyncFIFO1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SyncFIFO1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/SyncReset0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SyncReset0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/bram_1rw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_1rw
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkSoc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkSoc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_daisy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_daisy
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp6
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp7
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkbpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkbpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkcclass_axi4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkcclass_axi4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkcombo_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkcombo_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkcsr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkcsr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkdcache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkdcache
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkdmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkdmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfa_dtlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfa_dtlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfa_itlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfa_itlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfwding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfwding
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkicache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkicache
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkimem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkimem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkitlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkitlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkjtagdtm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkjtagdtm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkmbox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkmbox
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkmulticycle_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkmulticycle_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkregisterfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkregisterfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkrestoring_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkrestoring_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkriscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkriscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkriscvDebug013.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkriscvDebug013
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mksign_dump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mksign_dump
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_address_valid.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_address_valid
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_chk_interrupt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_chk_interrupt
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_decode_word32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_decode_word32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_decoder_func_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_decoder_func_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_csr_op.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_csr_op
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_decompress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_decompress
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_single_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_single_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_hasCSRPermission.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_hasCSRPermission
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_valid_csr_access.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_valid_csr_access
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/signedmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signedmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkTbSoc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkTbSoc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 6785.484 ; gain = 0.000 ; free physical = 32490 ; free virtual = 52388
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /scratch/hw_tools/vivado/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto aa415879349544c8a4224e13222fb792 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mkTbSoc_behav xil_defaultlib.mkTbSoc xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+ERROR: [XSIM 43-4286] "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkTbSoc.v" Line 2109. Undefined system function '$imported_init_rbb_jtag'
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 6785.484 ; gain = 0.000 ; free physical = 32456 ; free virtual = 52382
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mkTbSoc' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj mkTbSoc_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/BRAM2BELoad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRAM2BELoad
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/ClockInverter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockInverter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO10
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFOL1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFOL1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/MakeClock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MakeClock
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/MakeReset0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MakeReset0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/ResetEither.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ResetEither
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/RevertReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RevertReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/SizedFIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SizedFIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/SyncFIFO1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SyncFIFO1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/SyncReset0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SyncReset0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/bram_1rw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_1rw
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkSoc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkSoc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_daisy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_daisy
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp6
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp7
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkbpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkbpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkcclass_axi4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkcclass_axi4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkcombo_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkcombo_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkcsr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkcsr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkdcache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkdcache
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkdmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkdmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfa_dtlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfa_dtlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfa_itlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfa_itlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfwding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfwding
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkicache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkicache
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkimem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkimem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkitlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkitlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkjtagdtm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkjtagdtm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkmbox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkmbox
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkmulticycle_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkmulticycle_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkregisterfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkregisterfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkrestoring_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkrestoring_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkriscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkriscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkriscvDebug013.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkriscvDebug013
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mksign_dump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mksign_dump
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_address_valid.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_address_valid
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_chk_interrupt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_chk_interrupt
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_decode_word32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_decode_word32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_decoder_func_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_decoder_func_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_csr_op.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_csr_op
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_decompress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_decompress
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_single_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_single_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_hasCSRPermission.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_hasCSRPermission
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_valid_csr_access.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_valid_csr_access
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/signedmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signedmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkTbSoc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkTbSoc
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /scratch/hw_tools/vivado/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto aa415879349544c8a4224e13222fb792 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mkTbSoc_behav xil_defaultlib.mkTbSoc xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+ERROR: [XSIM 43-4286] "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkTbSoc.v" Line 2115. Undefined system function '$imported_get_frame'
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mkTbSoc' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj mkTbSoc_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/BRAM2BELoad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRAM2BELoad
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/ClockInverter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockInverter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO10
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFOL1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFOL1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/MakeClock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MakeClock
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/MakeReset0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MakeReset0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/ResetEither.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ResetEither
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/RevertReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RevertReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/SizedFIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SizedFIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/SyncFIFO1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SyncFIFO1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/SyncReset0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SyncReset0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/bram_1rw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_1rw
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkSoc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkSoc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_daisy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_daisy
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp6
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp7
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkbpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkbpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkcclass_axi4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkcclass_axi4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkcombo_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkcombo_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkcsr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkcsr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkdcache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkdcache
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkdmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkdmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfa_dtlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfa_dtlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfa_itlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfa_itlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfwding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfwding
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkicache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkicache
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkimem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkimem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkitlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkitlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkjtagdtm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkjtagdtm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkmbox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkmbox
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkmulticycle_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkmulticycle_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkregisterfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkregisterfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkrestoring_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkrestoring_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkriscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkriscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkriscvDebug013.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkriscvDebug013
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mksign_dump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mksign_dump
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_address_valid.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_address_valid
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_chk_interrupt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_chk_interrupt
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_decode_word32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_decode_word32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_decoder_func_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_decoder_func_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_csr_op.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_csr_op
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_decompress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_decompress
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_single_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_single_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_hasCSRPermission.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_hasCSRPermission
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_valid_csr_access.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_valid_csr_access
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/signedmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signedmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkTbSoc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkTbSoc
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /scratch/hw_tools/vivado/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto aa415879349544c8a4224e13222fb792 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mkTbSoc_behav xil_defaultlib.mkTbSoc xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.BRAM2BELoad(FILENAME="code.mem",...
+Compiling module xil_defaultlib.FIFO2(width=32'b0110100,guarded=...
+Compiling module xil_defaultlib.FIFO2(width=32'b01000111,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b01001101,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b0110,guarded=32'...
+Compiling module xil_defaultlib.bram_1rw(ADDR_WIDTH=32'b0110,DAT...
+Compiling module xil_defaultlib.FIFO2(width=32'b010001101,guarde...
+Compiling module xil_defaultlib.FIFO2(width=32'b011,guarded=32'b...
+Compiling module xil_defaultlib.FIFO2(width=32'b0101011,guarded=...
+Compiling module xil_defaultlib.FIFO2(width=32'b01101011,guarded...
+Compiling module xil_defaultlib.FIFO1(width=32'b01000101011,guar...
+Compiling module xil_defaultlib.bram_1rw(ADDR_WIDTH=32'b0110,DAT...
+Compiling module xil_defaultlib.mkdcache
+Compiling module xil_defaultlib.FIFO2(width=32'b010110101,guarde...
+Compiling module xil_defaultlib.FIFO2(width=32'b01000010,guarded...
+Compiling module xil_defaultlib.mkfa_dtlb
+Compiling module xil_defaultlib.mkdmem
+Compiling module xil_defaultlib.SizedFIFO(p1width=32'b010,p2dept...
+Compiling module xil_defaultlib.SizedFIFO(p1width=32'b0100,p2dep...
+Compiling module xil_defaultlib.FIFO2(width=32'b01000100,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b010,guarded=32'b...
+Compiling module xil_defaultlib.mkicache
+Compiling module xil_defaultlib.FIFO2(width=32'b0100111,guarded=...
+Compiling module xil_defaultlib.mkfa_itlb
+Compiling module xil_defaultlib.mkitlb
+Compiling module xil_defaultlib.mkimem
+Compiling module xil_defaultlib.FIFO1(width=32'b010001101,guarde...
+Compiling module xil_defaultlib.FIFO2(width=32'b010001111,guarde...
+Compiling module xil_defaultlib.FIFO2(width=32'b01001000,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b0111111,guarded=...
+Compiling module xil_defaultlib.SizedFIFO(p1width=32'b01010000,p...
+Compiling module xil_defaultlib.FIFO2(width=32'b01111010,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b0100000,guarded=...
+Compiling module xil_defaultlib.FIFOL1(width=32'b01100111)
+Compiling module xil_defaultlib.FIFOL1(width=32'b01000000)
+Compiling module xil_defaultlib.FIFOL1(width=32'b0100000)
+Compiling module xil_defaultlib.FIFO2(width=32'b01100000,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b01010011,guarded...
+Compiling module xil_defaultlib.FIFOL1(width=32'b010001001)
+Compiling module xil_defaultlib.FIFOL1(width=32'b01100000)
+Compiling module xil_defaultlib.RegFile(addr_width=32'b011,data_...
+Compiling module xil_defaultlib.mkbpu
+Compiling module xil_defaultlib.mkstage0
+Compiling module xil_defaultlib.FIFO2(width=32'b0101001,guarded=...
+Compiling module xil_defaultlib.RevertReg(width=32'b01,init=1'b1...
+Compiling module xil_defaultlib.module_fn_decompress
+Compiling module xil_defaultlib.mkstage1
+Compiling module xil_defaultlib.RegFile(addr_width=32'b0101,data...
+Compiling module xil_defaultlib.mkregisterfile
+Compiling module xil_defaultlib.module_decode_word32
+Compiling module xil_defaultlib.module_chk_interrupt
+Compiling module xil_defaultlib.module_hasCSRPermission
+Compiling module xil_defaultlib.module_valid_csr_access
+Compiling module xil_defaultlib.module_address_valid
+Compiling module xil_defaultlib.module_decoder_func_32
+Compiling module xil_defaultlib.mkstage2
+Compiling module xil_defaultlib.mkfwding
+Compiling module xil_defaultlib.FIFO1(width=32'b011010001,guarde...
+Compiling module xil_defaultlib.mkfpu
+Compiling module xil_defaultlib.module_fn_single_div
+Compiling module xil_defaultlib.mkrestoring_div
+Compiling module xil_defaultlib.signedmul(AWIDTH=32'b01000001,BW...
+Compiling module xil_defaultlib.mkcombo_mul
+Compiling module xil_defaultlib.mkmbox
+Compiling module xil_defaultlib.mkmulticycle_alu
+Compiling module xil_defaultlib.module_fn_alu
+Compiling module xil_defaultlib.mkstage3
+Compiling module xil_defaultlib.mkstage4
+Compiling module xil_defaultlib.FIFOL1(width=32'b01010000)
+Compiling module xil_defaultlib.module_fn_csr_op
+Compiling module xil_defaultlib.mk_csr_grp1
+Compiling module xil_defaultlib.mk_csr_grp2
+Compiling module xil_defaultlib.mk_csr_grp3
+Compiling module xil_defaultlib.mk_csr_grp4
+Compiling module xil_defaultlib.mk_csr_grp5
+Compiling module xil_defaultlib.mk_csr_grp6
+Compiling module xil_defaultlib.mk_csr_grp7
+Compiling module xil_defaultlib.mk_csr_daisy
+Compiling module xil_defaultlib.mkcsr
+Compiling module xil_defaultlib.FIFOL1(width=32'b010101000)
+Compiling module xil_defaultlib.mkstage5
+Compiling module xil_defaultlib.mkriscv
+Compiling module xil_defaultlib.mkcclass_axi4
+Compiling module xil_defaultlib.ResetEither
+Compiling module xil_defaultlib.MakeReset0(init=1'b1)
+Compiling module xil_defaultlib.mkriscvDebug013
+Compiling module xil_defaultlib.FIFO10(guarded=32'b01)
+Compiling module xil_defaultlib.FIFO1(width=32'b011,guarded=32'b...
+Compiling module xil_defaultlib.FIFO1(width=32'b0100,guarded=32'...
+Compiling module xil_defaultlib.ClockInverter
+Compiling module xil_defaultlib.SyncReset0
+Compiling module xil_defaultlib.FIFO1(width=32'b0101000,guarded=...
+Compiling module xil_defaultlib.FIFO1(width=32'b0100010,guarded=...
+Compiling module xil_defaultlib.mkjtagdtm
+Compiling module xil_defaultlib.SizedFIFO(p1width=32'b011,p2dept...
+Compiling module xil_defaultlib.mksign_dump
+Compiling module xil_defaultlib.SyncFIFO1(dataWidth=32'b0101001)
+Compiling module xil_defaultlib.SyncFIFO1(dataWidth=32'b0100010)
+Compiling module xil_defaultlib.Counter(width=32'b010000,init=16...
+Compiling module xil_defaultlib.Counter(width=32'b011,init=3'b0)
+Compiling module xil_defaultlib.SizedFIFO(p1width=32'b01000,p2de...
+Compiling module xil_defaultlib.mkSoc
+Compiling module xil_defaultlib.MakeClock(initVal=1'b1,initGate=...
+Compiling module xil_defaultlib.mkTbSoc
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mkTbSoc_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim/xsim.dir/mkTbSoc_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim/xsim.dir/mkTbSoc_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Feb 19 12:47:51 2020. For additional details about this file, please refer to the WebTalk help file at /scratch/hw_tools/vivado/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 19 12:47:51 2020...
+run_program: Time (s): cpu = 00:01:06 ; elapsed = 00:00:36 . Memory (MB): peak = 6816.367 ; gain = 0.000 ; free physical = 32371 ; free virtual = 52402
+INFO: [USF-XSim-69] 'elaborate' step finished in '35' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mkTbSoc_behav -key {Behavioral:sim_1:Functional:mkTbSoc} -tclbatch {mkTbSoc.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source mkTbSoc.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File code.mem referenced on /inner_space/shakti/correlator/c-class/base-sim/verilog/BRAM2BELoad.v at line 92 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mkTbSoc_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:01:15 ; elapsed = 00:00:40 . Memory (MB): peak = 6916.047 ; gain = 99.680 ; free physical = 32270 ; free virtual = 52313
+add_force {/mkTbSoc/CLK} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/mkTbSoc/RST_N} -radix hex {0 0ns}
+run 10 ns
+run 10 ns
+add_force {/mkTbSoc/CLK} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+add_force {/mkTbSoc/RST_N} -radix hex {1 0ns}
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 100 us
+run 1000 us
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:37 . Memory (MB): peak = 6918.047 ; gain = 0.000 ; free physical = 32263 ; free virtual = 52355
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:49 ; elapsed = 00:00:16 . Memory (MB): peak = 6934.121 ; gain = 0.000 ; free physical = 32321 ; free virtual = 52376
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mkTbSoc' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj mkTbSoc_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/BRAM2BELoad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRAM2BELoad
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/ClockInverter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockInverter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO10
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFOL1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFOL1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/MakeClock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MakeClock
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/MakeReset0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MakeReset0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/ResetEither.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ResetEither
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/RevertReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RevertReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/SizedFIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SizedFIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/SyncFIFO1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SyncFIFO1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/SyncReset0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SyncReset0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/bram_1rw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_1rw
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkSoc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkSoc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_daisy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_daisy
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp6
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp7
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkbpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkbpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkcclass_axi4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkcclass_axi4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkcombo_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkcombo_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkcsr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkcsr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkdcache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkdcache
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkdmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkdmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfa_dtlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfa_dtlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfa_itlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfa_itlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfwding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfwding
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkicache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkicache
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkimem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkimem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkitlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkitlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkjtagdtm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkjtagdtm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkmbox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkmbox
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkmulticycle_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkmulticycle_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkregisterfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkregisterfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkrestoring_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkrestoring_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkriscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkriscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkriscvDebug013.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkriscvDebug013
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mksign_dump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mksign_dump
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_address_valid.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_address_valid
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_chk_interrupt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_chk_interrupt
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_decode_word32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_decode_word32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_decoder_func_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_decoder_func_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_csr_op.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_csr_op
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_decompress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_decompress
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_single_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_single_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_hasCSRPermission.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_hasCSRPermission
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_valid_csr_access.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_valid_csr_access
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/signedmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signedmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkTbSoc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkTbSoc
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /scratch/hw_tools/vivado/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto aa415879349544c8a4224e13222fb792 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mkTbSoc_behav xil_defaultlib.mkTbSoc xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.BRAM2BELoad(FILENAME="/inner_spa...
+Compiling module xil_defaultlib.FIFO2(width=32'b0110100,guarded=...
+Compiling module xil_defaultlib.FIFO2(width=32'b01000111,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b01001101,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b0110,guarded=32'...
+Compiling module xil_defaultlib.bram_1rw(ADDR_WIDTH=32'b0110,DAT...
+Compiling module xil_defaultlib.FIFO2(width=32'b010001101,guarde...
+Compiling module xil_defaultlib.FIFO2(width=32'b011,guarded=32'b...
+Compiling module xil_defaultlib.FIFO2(width=32'b0101011,guarded=...
+Compiling module xil_defaultlib.FIFO2(width=32'b01101011,guarded...
+Compiling module xil_defaultlib.FIFO1(width=32'b01000101011,guar...
+Compiling module xil_defaultlib.bram_1rw(ADDR_WIDTH=32'b0110,DAT...
+Compiling module xil_defaultlib.mkdcache
+Compiling module xil_defaultlib.FIFO2(width=32'b010110101,guarde...
+Compiling module xil_defaultlib.FIFO2(width=32'b01000010,guarded...
+Compiling module xil_defaultlib.mkfa_dtlb
+Compiling module xil_defaultlib.mkdmem
+Compiling module xil_defaultlib.SizedFIFO(p1width=32'b010,p2dept...
+Compiling module xil_defaultlib.SizedFIFO(p1width=32'b0100,p2dep...
+Compiling module xil_defaultlib.FIFO2(width=32'b01000100,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b010,guarded=32'b...
+Compiling module xil_defaultlib.mkicache
+Compiling module xil_defaultlib.FIFO2(width=32'b0100111,guarded=...
+Compiling module xil_defaultlib.mkfa_itlb
+Compiling module xil_defaultlib.mkitlb
+Compiling module xil_defaultlib.mkimem
+Compiling module xil_defaultlib.FIFO1(width=32'b010001101,guarde...
+Compiling module xil_defaultlib.FIFO2(width=32'b010001111,guarde...
+Compiling module xil_defaultlib.FIFO2(width=32'b01001000,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b0111111,guarded=...
+Compiling module xil_defaultlib.SizedFIFO(p1width=32'b01010000,p...
+Compiling module xil_defaultlib.FIFO2(width=32'b01111010,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b0100000,guarded=...
+Compiling module xil_defaultlib.FIFOL1(width=32'b01100111)
+Compiling module xil_defaultlib.FIFOL1(width=32'b01000000)
+Compiling module xil_defaultlib.FIFOL1(width=32'b0100000)
+Compiling module xil_defaultlib.FIFO2(width=32'b01100000,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b01010011,guarded...
+Compiling module xil_defaultlib.FIFOL1(width=32'b010001001)
+Compiling module xil_defaultlib.FIFOL1(width=32'b01100000)
+Compiling module xil_defaultlib.RegFile(addr_width=32'b011,data_...
+Compiling module xil_defaultlib.mkbpu
+Compiling module xil_defaultlib.mkstage0
+Compiling module xil_defaultlib.FIFO2(width=32'b0101001,guarded=...
+Compiling module xil_defaultlib.RevertReg(width=32'b01,init=1'b1...
+Compiling module xil_defaultlib.module_fn_decompress
+Compiling module xil_defaultlib.mkstage1
+Compiling module xil_defaultlib.RegFile(addr_width=32'b0101,data...
+Compiling module xil_defaultlib.mkregisterfile
+Compiling module xil_defaultlib.module_decode_word32
+Compiling module xil_defaultlib.module_chk_interrupt
+Compiling module xil_defaultlib.module_hasCSRPermission
+Compiling module xil_defaultlib.module_valid_csr_access
+Compiling module xil_defaultlib.module_address_valid
+Compiling module xil_defaultlib.module_decoder_func_32
+Compiling module xil_defaultlib.mkstage2
+Compiling module xil_defaultlib.mkfwding
+Compiling module xil_defaultlib.FIFO1(width=32'b011010001,guarde...
+Compiling module xil_defaultlib.mkfpu
+Compiling module xil_defaultlib.module_fn_single_div
+Compiling module xil_defaultlib.mkrestoring_div
+Compiling module xil_defaultlib.signedmul(AWIDTH=32'b01000001,BW...
+Compiling module xil_defaultlib.mkcombo_mul
+Compiling module xil_defaultlib.mkmbox
+Compiling module xil_defaultlib.mkmulticycle_alu
+Compiling module xil_defaultlib.module_fn_alu
+Compiling module xil_defaultlib.mkstage3
+Compiling module xil_defaultlib.mkstage4
+Compiling module xil_defaultlib.FIFOL1(width=32'b01010000)
+Compiling module xil_defaultlib.module_fn_csr_op
+Compiling module xil_defaultlib.mk_csr_grp1
+Compiling module xil_defaultlib.mk_csr_grp2
+Compiling module xil_defaultlib.mk_csr_grp3
+Compiling module xil_defaultlib.mk_csr_grp4
+Compiling module xil_defaultlib.mk_csr_grp5
+Compiling module xil_defaultlib.mk_csr_grp6
+Compiling module xil_defaultlib.mk_csr_grp7
+Compiling module xil_defaultlib.mk_csr_daisy
+Compiling module xil_defaultlib.mkcsr
+Compiling module xil_defaultlib.FIFOL1(width=32'b010101000)
+Compiling module xil_defaultlib.mkstage5
+Compiling module xil_defaultlib.mkriscv
+Compiling module xil_defaultlib.mkcclass_axi4
+Compiling module xil_defaultlib.ResetEither
+Compiling module xil_defaultlib.MakeReset0(init=1'b1)
+Compiling module xil_defaultlib.mkriscvDebug013
+Compiling module xil_defaultlib.FIFO10(guarded=32'b01)
+Compiling module xil_defaultlib.FIFO1(width=32'b011,guarded=32'b...
+Compiling module xil_defaultlib.FIFO1(width=32'b0100,guarded=32'...
+Compiling module xil_defaultlib.ClockInverter
+Compiling module xil_defaultlib.SyncReset0
+Compiling module xil_defaultlib.FIFO1(width=32'b0101000,guarded=...
+Compiling module xil_defaultlib.FIFO1(width=32'b0100010,guarded=...
+Compiling module xil_defaultlib.mkjtagdtm
+Compiling module xil_defaultlib.SizedFIFO(p1width=32'b011,p2dept...
+Compiling module xil_defaultlib.mksign_dump
+Compiling module xil_defaultlib.SyncFIFO1(dataWidth=32'b0101001)
+Compiling module xil_defaultlib.SyncFIFO1(dataWidth=32'b0100010)
+Compiling module xil_defaultlib.Counter(width=32'b010000,init=16...
+Compiling module xil_defaultlib.Counter(width=32'b011,init=3'b0)
+Compiling module xil_defaultlib.SizedFIFO(p1width=32'b01000,p2de...
+Compiling module xil_defaultlib.mkSoc
+Compiling module xil_defaultlib.MakeClock(initVal=1'b1,initGate=...
+Compiling module xil_defaultlib.mkTbSoc
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mkTbSoc_behav
+run_program: Time (s): cpu = 00:01:06 ; elapsed = 00:00:25 . Memory (MB): peak = 6934.121 ; gain = 0.000 ; free physical = 32321 ; free virtual = 52376
+INFO: [USF-XSim-69] 'elaborate' step finished in '25' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mkTbSoc_behav -key {Behavioral:sim_1:Functional:mkTbSoc} -tclbatch {mkTbSoc.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source mkTbSoc.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mkTbSoc_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:01:11 ; elapsed = 00:00:30 . Memory (MB): peak = 6934.121 ; gain = 0.000 ; free physical = 32292 ; free virtual = 52333
+add_force {/mkTbSoc/CLK} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/mkTbSoc/RST_N} -radix hex {0 0ns}
+run 1000 ns
+add_force {/mkTbSoc/RST_N} -radix hex {1 0ns}
+run 1000 ns
+run 1000 ns
+run 1000 us
+$finish called at time : 199070 ns
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 6934.121 ; gain = 0.000 ; free physical = 32270 ; free virtual = 52326
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 6945.059 ; gain = 9.941 ; free physical = 32267 ; free virtual = 52319
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mkTbSoc' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj mkTbSoc_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/BRAM2BELoad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRAM2BELoad
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/ClockInverter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockInverter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO10
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFO2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/FIFOL1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFOL1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/MakeClock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MakeClock
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/MakeReset0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MakeReset0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/ResetEither.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ResetEither
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/RevertReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RevertReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/SizedFIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SizedFIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/SyncFIFO1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SyncFIFO1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/SyncReset0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SyncReset0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/bram_1rw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_1rw
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkSoc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkSoc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_daisy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_daisy
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp6
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mk_csr_grp7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mk_csr_grp7
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkbpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkbpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkcclass_axi4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkcclass_axi4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkcombo_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkcombo_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkcsr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkcsr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkdcache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkdcache
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkdmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkdmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfa_dtlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfa_dtlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfa_itlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfa_itlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkfwding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkfwding
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkicache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkicache
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkimem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkimem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkitlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkitlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkjtagdtm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkjtagdtm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkmbox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkmbox
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkmulticycle_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkmulticycle_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkregisterfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkregisterfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkrestoring_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkrestoring_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkriscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkriscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkriscvDebug013.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkriscvDebug013
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mksign_dump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mksign_dump
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkstage5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkstage5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_address_valid.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_address_valid
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_chk_interrupt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_chk_interrupt
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_decode_word32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_decode_word32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_decoder_func_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_decoder_func_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_csr_op.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_csr_op
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_decompress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_decompress
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_fn_single_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_fn_single_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_hasCSRPermission.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_hasCSRPermission
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/module_valid_csr_access.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_valid_csr_access
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/signedmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signedmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/inner_space/shakti/correlator/c-class/base-sim/verilog/mkTbSoc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mkTbSoc
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /scratch/hw_tools/vivado/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto aa415879349544c8a4224e13222fb792 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mkTbSoc_behav xil_defaultlib.mkTbSoc xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.BRAM2BELoad(FILENAME="/inner_spa...
+Compiling module xil_defaultlib.FIFO2(width=32'b0110100,guarded=...
+Compiling module xil_defaultlib.FIFO2(width=32'b01000111,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b01001101,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b0110,guarded=32'...
+Compiling module xil_defaultlib.bram_1rw(ADDR_WIDTH=32'b0110,DAT...
+Compiling module xil_defaultlib.FIFO2(width=32'b010001101,guarde...
+Compiling module xil_defaultlib.FIFO2(width=32'b011,guarded=32'b...
+Compiling module xil_defaultlib.FIFO2(width=32'b0101011,guarded=...
+Compiling module xil_defaultlib.FIFO2(width=32'b01101011,guarded...
+Compiling module xil_defaultlib.FIFO1(width=32'b01000101011,guar...
+Compiling module xil_defaultlib.bram_1rw(ADDR_WIDTH=32'b0110,DAT...
+Compiling module xil_defaultlib.mkdcache
+Compiling module xil_defaultlib.FIFO2(width=32'b010110101,guarde...
+Compiling module xil_defaultlib.FIFO2(width=32'b01000010,guarded...
+Compiling module xil_defaultlib.mkfa_dtlb
+Compiling module xil_defaultlib.mkdmem
+Compiling module xil_defaultlib.SizedFIFO(p1width=32'b010,p2dept...
+Compiling module xil_defaultlib.SizedFIFO(p1width=32'b0100,p2dep...
+Compiling module xil_defaultlib.FIFO2(width=32'b01000100,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b010,guarded=32'b...
+Compiling module xil_defaultlib.mkicache
+Compiling module xil_defaultlib.FIFO2(width=32'b0100111,guarded=...
+Compiling module xil_defaultlib.mkfa_itlb
+Compiling module xil_defaultlib.mkitlb
+Compiling module xil_defaultlib.mkimem
+Compiling module xil_defaultlib.FIFO1(width=32'b010001101,guarde...
+Compiling module xil_defaultlib.FIFO2(width=32'b010001111,guarde...
+Compiling module xil_defaultlib.FIFO2(width=32'b01001000,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b0111111,guarded=...
+Compiling module xil_defaultlib.SizedFIFO(p1width=32'b01010000,p...
+Compiling module xil_defaultlib.FIFO2(width=32'b01111010,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b0100000,guarded=...
+Compiling module xil_defaultlib.FIFOL1(width=32'b01100111)
+Compiling module xil_defaultlib.FIFOL1(width=32'b01000000)
+Compiling module xil_defaultlib.FIFOL1(width=32'b0100000)
+Compiling module xil_defaultlib.FIFO2(width=32'b01100000,guarded...
+Compiling module xil_defaultlib.FIFO2(width=32'b01010011,guarded...
+Compiling module xil_defaultlib.FIFOL1(width=32'b010001001)
+Compiling module xil_defaultlib.FIFOL1(width=32'b01100000)
+Compiling module xil_defaultlib.RegFile(addr_width=32'b011,data_...
+Compiling module xil_defaultlib.mkbpu
+Compiling module xil_defaultlib.mkstage0
+Compiling module xil_defaultlib.FIFO2(width=32'b0101001,guarded=...
+Compiling module xil_defaultlib.RevertReg(width=32'b01,init=1'b1...
+Compiling module xil_defaultlib.module_fn_decompress
+Compiling module xil_defaultlib.mkstage1
+Compiling module xil_defaultlib.RegFile(addr_width=32'b0101,data...
+Compiling module xil_defaultlib.mkregisterfile
+Compiling module xil_defaultlib.module_decode_word32
+Compiling module xil_defaultlib.module_chk_interrupt
+Compiling module xil_defaultlib.module_hasCSRPermission
+Compiling module xil_defaultlib.module_valid_csr_access
+Compiling module xil_defaultlib.module_address_valid
+Compiling module xil_defaultlib.module_decoder_func_32
+Compiling module xil_defaultlib.mkstage2
+Compiling module xil_defaultlib.mkfwding
+Compiling module xil_defaultlib.FIFO1(width=32'b011010001,guarde...
+Compiling module xil_defaultlib.mkfpu
+Compiling module xil_defaultlib.module_fn_single_div
+Compiling module xil_defaultlib.mkrestoring_div
+Compiling module xil_defaultlib.signedmul(AWIDTH=32'b01000001,BW...
+Compiling module xil_defaultlib.mkcombo_mul
+Compiling module xil_defaultlib.mkmbox
+Compiling module xil_defaultlib.mkmulticycle_alu
+Compiling module xil_defaultlib.module_fn_alu
+Compiling module xil_defaultlib.mkstage3
+Compiling module xil_defaultlib.mkstage4
+Compiling module xil_defaultlib.FIFOL1(width=32'b01010000)
+Compiling module xil_defaultlib.module_fn_csr_op
+Compiling module xil_defaultlib.mk_csr_grp1
+Compiling module xil_defaultlib.mk_csr_grp2
+Compiling module xil_defaultlib.mk_csr_grp3
+Compiling module xil_defaultlib.mk_csr_grp4
+Compiling module xil_defaultlib.mk_csr_grp5
+Compiling module xil_defaultlib.mk_csr_grp6
+Compiling module xil_defaultlib.mk_csr_grp7
+Compiling module xil_defaultlib.mk_csr_daisy
+Compiling module xil_defaultlib.mkcsr
+Compiling module xil_defaultlib.FIFOL1(width=32'b010101000)
+Compiling module xil_defaultlib.mkstage5
+Compiling module xil_defaultlib.mkriscv
+Compiling module xil_defaultlib.mkcclass_axi4
+Compiling module xil_defaultlib.ResetEither
+Compiling module xil_defaultlib.MakeReset0(init=1'b1)
+Compiling module xil_defaultlib.mkriscvDebug013
+Compiling module xil_defaultlib.FIFO10(guarded=32'b01)
+Compiling module xil_defaultlib.FIFO1(width=32'b011,guarded=32'b...
+Compiling module xil_defaultlib.FIFO1(width=32'b0100,guarded=32'...
+Compiling module xil_defaultlib.ClockInverter
+Compiling module xil_defaultlib.SyncReset0
+Compiling module xil_defaultlib.FIFO1(width=32'b0101000,guarded=...
+Compiling module xil_defaultlib.FIFO1(width=32'b0100010,guarded=...
+Compiling module xil_defaultlib.mkjtagdtm
+Compiling module xil_defaultlib.SizedFIFO(p1width=32'b011,p2dept...
+Compiling module xil_defaultlib.mksign_dump
+Compiling module xil_defaultlib.SyncFIFO1(dataWidth=32'b0101001)
+Compiling module xil_defaultlib.SyncFIFO1(dataWidth=32'b0100010)
+Compiling module xil_defaultlib.Counter(width=32'b010000,init=16...
+Compiling module xil_defaultlib.Counter(width=32'b011,init=3'b0)
+Compiling module xil_defaultlib.SizedFIFO(p1width=32'b01000,p2de...
+Compiling module xil_defaultlib.mkSoc
+Compiling module xil_defaultlib.MakeClock(initVal=1'b1,initGate=...
+Compiling module xil_defaultlib.mkTbSoc
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mkTbSoc_behav
+run_program: Time (s): cpu = 00:01:11 ; elapsed = 00:00:40 . Memory (MB): peak = 6945.059 ; gain = 0.000 ; free physical = 32178 ; free virtual = 52230
+INFO: [USF-XSim-69] 'elaborate' step finished in '40' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/inner_space/shakti/correlator/c-class/fpga/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mkTbSoc_behav -key {Behavioral:sim_1:Functional:mkTbSoc} -tclbatch {mkTbSoc.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source mkTbSoc.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mkTbSoc_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:01:18 ; elapsed = 00:00:47 . Memory (MB): peak = 6945.059 ; gain = 0.000 ; free physical = 32152 ; free virtual = 52199
+add_force {/mkTbSoc/CLK} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/mkTbSoc/RST_N} -radix hex {0 0ns}
+run 1000 ns
+add_force {/mkTbSoc/RST_N} -radix hex {1 0ns}
+run 1000 us
+$finish called at time : 199070 ns
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 6945.059 ; gain = 0.000 ; free physical = 32147 ; free virtual = 52211
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 6947.059 ; gain = 2.000 ; free physical = 32157 ; free virtual = 52219
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 19 13:21:08 2020...

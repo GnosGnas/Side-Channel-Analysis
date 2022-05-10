@@ -9,7 +9,7 @@
     <Object name="xc7k160t_0" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value=""/>
       <Properties Property="PROBES.FILE" value=""/>
-      <Properties Property="PROGRAM.HW_BITSTREAM" value="/home/surya/Desktop/sem_5/Diff-power-analysis/new_attempt/aes-/aes_sbox2_sources/Top_sbox2_mod1_1lakh_600ms.bit"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="/home/surya/Desktop/sem_5/Diff-power-analysis/new_attempt/aes-/aes_sbox2_sources/Topnew_sbox1_unmod_50k_600ms.bit"/>
       <Properties Property="SLR.COUNT" value="1"/>
     </Object>
   </ObjectList>

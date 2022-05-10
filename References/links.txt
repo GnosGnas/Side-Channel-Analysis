@@ -1,0 +1,9 @@
+tvla_practicality - https://eprint.iacr.org/2016/1152.pdf
+
+https://www.rambus.com/blogs/side-channel-attacks/#:~:text=A%20side%2Dchannel%20attack%20(SCA,execution%20time%2C%20and%20electromagnetic%20emission.
+
+https://www.researchgate.net/publication/312873398_Tamper-resistant_cryptographic_hardware/download
+
+https://www.rambus.com/blogs/side-channel-attacks/#:~:text=A%20side%2Dchannel%20attack%20(SCA,execution%20time%2C%20and%20electromagnetic%20emission.
+
+https://www.rambus.com/wp-content/uploads/2015/08/TVLA-DTR-with-AES.pdf

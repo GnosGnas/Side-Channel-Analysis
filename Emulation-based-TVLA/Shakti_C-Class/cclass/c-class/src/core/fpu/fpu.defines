@@ -1,0 +1,19 @@
+`define FADD_f5         'b00000
+`define FSUB_f5         'b00001
+`define FMUL_f5         'b00010
+`define FDIV_f5         'b00011
+`define FSQRT_f5        'b01011
+`define FP_OPCODE       'b0100
+`define FCMP_f5         'b10100
+`define FMMAX_f5        'b00101
+`define FCVT_F_I_f5     'b11010
+`define FCVT_I_F_f5     'b11000
+`define FSGNJN_f5       'b00100
+`define FCLASS_f5       'b11100
+`define FCVT_S_D_f5     'b01000
+`define FMV_X_S_f7      'b1110000
+`define FMV_S_X_f7      'b1111000
+`define FMV_X_D_f7      'b1110001
+`define FMV_D_X_f7      'b1111001
+
+

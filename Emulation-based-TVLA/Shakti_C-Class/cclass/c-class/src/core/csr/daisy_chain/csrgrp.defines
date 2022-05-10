@@ -1,0 +1,273 @@
+//////////////////////////////////////CSR LIST///////////////////////////////////////////////////
+
+////////////////////////////group-1/////////////////////////////////////
+`define USTATUS 12'h000	
+`define UIE 12'h004	
+`define UTVEC 12'h005	
+`define UEPC 12'h041	
+`define UCAUSE 12'h042	
+`define UTVAL 12'h043	
+`define UIP 12'h044	
+`define MSTATUS 12'h300	
+`define MEDELEG 12'h302	
+`define MIDELEG 12'h303	
+`define MIE 12'h304	
+`define MTVEC 12'h305	
+`define MEPC 12'h341	
+`define MCAUSE 12'h342	
+`define MTVAL 12'h343	
+`define MIP 12'h344	
+`define SSTATUS 12'h100	
+`define SEDELEG 12'h102	
+`define SIDELEG 12'h103	
+`define SIE 12'h104	
+`define STVEC 12'h105	
+`define SEPC 12'h141	
+`define SCAUSE 12'h142	
+`define STVAL 12'h143	
+`define SIP 12'h144	
+`define SATP 12'h180
+
+`define grp1_size 28
+////////////////////////////////////////////////////////////////////////
+
+////////////////////////////group-2/////////////////////////////////////
+`define USCRATCH 12'h040	
+`define FFLAGS 12'h001	
+`define FRM 12'h002	
+`define FCSR 12'h003	
+`define MISA 12'h301	
+`define MSCRATCH 12'h340	
+`define PMPCFG0 12'h3a0	
+`define PMPCFG1 12'h3a1	
+`define PMPCFG2 12'h3a2	
+`define PMPCFG3 12'h3a3	
+`define PMPADDR0 12'h3b0	
+`define PMPADDR1 12'h3b1	
+`define PMPADDR2 12'h3b2	
+`define PMPADDR3 12'h3b3	
+`define PMPADDR4 12'h3b4	
+`define PMPADDR5 12'h3b5	
+`define PMPADDR6 12'h3b6	
+`define PMPADDR7 12'h3b7	
+`define PMPADDR8 12'h3b8	
+`define PMPADDR9 12'h3b9	
+`define PMPADDR10 12'h3ba	
+`define PMPADDR11 12'h3bb	
+`define PMPADDR12 12'h3bc	
+`define PMPADDR13 12'h3bd	
+`define PMPADDR14 12'h3be	
+`define PMPADDR15 12'h3bf	
+`define SSCRATCH 12'h140
+`define CUSTOMCNTRL 12'h800
+
+`define grp2_size 28 //need to be checked
+////////////////////////////////////////////////////////////////////////
+
+////////////////////////////group-3/////////////////////////////////////    
+`define CYCLE 12'hc00	
+`define TIME 12'hc01	
+`define INSTRET 12'hc02	
+`define CYCLEH 12'hc80	
+`define TIMEH 12'hc81	
+`define INSTRETH 12'hc82	
+`define MVENDROID 12'hf11	
+`define MARCHID 12'hf12	
+`define MIMPID 12'hf13	
+`define MHARTID 12'hf14	
+`define MCYCLE 12'hb00
+`define MCOUNTEREN 12'h306
+`define MCOUNTINHIBIT 12'h320
+`define MTIME	12'hB01	
+`define MINSTRET 12'hb02	
+`define MCYCLEH 12'hb80
+`define MTIMEH 12'hB81	
+`define MINSTRETH 12'hb82	
+`define TSELECT 12'h7a0	
+`define TDATA1 12'h7a1	
+`define TDATA2 12'h7a2	
+`define TDATA3 12'h7a3	
+`define DCSR 12'h7b0	
+`define DPC 12'h7b1
+`define DSCRATCH 12'h7b2
+`define DTVEC 12'h7C0           // Debug trap vector
+`define DENABLE 12'h7C1         // Debug enable register
+`define MHPMINTERRUPTEN 12'h7C2 // interrupt enable for mhpm counters
+`define DTIM_BASE 12'h7c3
+`define DTIM_BOUND 12'h7c4
+`define ITIM_BASE 12'h7c5
+`define ITIM_BOUND 12'h7c6
+`define TINFO 12'h7a4
+`define TCONTROL 12'h7a5
+`define TMCONTEXT 12'h7a8
+`define TSCONTEXT 12'h7aa
+`define SCOUNTEREN 12'h106	
+
+
+`define grp3_size 21//need to be checked
+////////////////////////////////////////////////////////////////////////
+
+////////////////////////////group-4/////////////////////////////////////
+`define HPMCOUNTER3 12'hc03	
+`define HPMCOUNTER4 12'hc04	
+`define HPMCOUNTER5 12'hc05	
+`define HPMCOUNTER6 12'hc06	
+`define HPMCOUNTER7 12'hc07	
+`define HPMCOUNTER8 12'hc08	
+`define HPMCOUNTER9 12'hc09	
+`define HPMCOUNTER3H 12'hc83	
+`define HPMCOUNTER4H 12'hc84	
+`define HPMCOUNTER5H 12'hc85	
+`define HPMCOUNTER6H 12'hc86	
+`define HPMCOUNTER7H 12'hc87	
+`define HPMCOUNTER8H 12'hc88	
+`define HPMCOUNTER9H 12'hc89	
+`define MHPMCOUNTER3 12'hb03	
+`define MHPMCOUNTER4 12'hb04	
+`define MHPMCOUNTER5 12'hb05	
+`define MHPMCOUNTER6 12'hb06	
+`define MHPMCOUNTER7 12'hb07	
+`define MHPMCOUNTER8 12'hb08	
+`define MHPMCOUNTER9 12'hb09	
+`define MHPMCOUNTER3H 12'hb83	
+`define MHPMCOUNTER4H 12'hb84	
+`define MHPMCOUNTER5H 12'hb85	
+`define MHPMCOUNTER6H 12'hb86	
+`define MHPMCOUNTER7H 12'hb87	
+`define MHPMCOUNTER8H 12'hb88	
+`define MHPMCOUNTER9H 12'hb89	
+`define MHPMEVENT3 12'h323	
+`define MHPMEVENT4 12'h324	
+`define MHPMEVENT5 12'h325	
+`define MHPMEVENT6 12'h326	
+`define MHPMEVENT7 12'h327	
+`define MHPMEVENT8 12'h328	
+`define MHPMEVENT9 12'h329
+
+`define grp4_size 35
+////////////////////////////////////////////////////////////////////////
+
+////////////////////////////group-5/////////////////////////////////////
+`define HPMCOUNTER10 12'hc0a	
+`define HPMCOUNTER11 12'hc0b	
+`define HPMCOUNTER12 12'hc0c	
+`define HPMCOUNTER13 12'hc0d	
+`define HPMCOUNTER14 12'hc0e	
+`define HPMCOUNTER15 12'hc0f	
+`define HPMCOUNTER16 12'hc10	
+`define HPMCOUNTER10H 12'hc8a	
+`define HPMCOUNTER11H 12'hc8b	
+`define HPMCOUNTER12H 12'hc8c	
+`define HPMCOUNTER13H 12'hc8d	
+`define HPMCOUNTER14H 12'hc8e	
+`define HPMCOUNTER15H 12'hc8f	
+`define HPMCOUNTER16H 12'hc90	
+`define MHPMCOUNTER10 12'hb0a	
+`define MHPMCOUNTER11 12'hb0b	
+`define MHPMCOUNTER12 12'hb0c	
+`define MHPMCOUNTER13 12'hb0d	
+`define MHPMCOUNTER14 12'hb0e	
+`define MHPMCOUNTER15 12'hb0f	
+`define MHPMCOUNTER16 12'hb10	
+`define MHPMCOUNTER10H 12'hb8a	
+`define MHPMCOUNTER11H 12'hb8b	
+`define MHPMCOUNTER12H 12'hb8c	
+`define MHPMCOUNTER13H 12'hb8d	
+`define MHPMCOUNTER14H 12'hb8e	
+`define MHPMCOUNTER15H 12'hb8f	
+`define MHPMCOUNTER16H 12'hb90	
+`define MHPMEVENT10 12'h32a	
+`define MHPMEVENT11 12'h32b	
+`define MHPMEVENT12 12'h32c	
+`define MHPMEVENT13 12'h32d	
+`define MHPMEVENT14 12'h32e	
+`define MHPMEVENT15 12'h32f	
+`define MHPMEVENT16 12'h330
+
+`define grp5_size 35
+////////////////////////////////////////////////////////////////////////	
+
+////////////////////////////group-6/////////////////////////////////////
+`define HPMCOUNTER17 12'hc11	
+`define HPMCOUNTER18 12'hc12	
+`define HPMCOUNTER19 12'hc13	
+`define HPMCOUNTER20 12'hc14	
+`define HPMCOUNTER21 12'hc15	
+`define HPMCOUNTER22 12'hc16	
+`define HPMCOUNTER23 12'hc17	
+`define HPMCOUNTER17H 12'hc91	
+`define HPMCOUNTER18H 12'hc92	
+`define HPMCOUNTER19H 12'hc93	
+`define HPMCOUNTER20H 12'hc94	
+`define HPMCOUNTER21H 12'hc95	
+`define HPMCOUNTER22H 12'hc96	
+`define HPMCOUNTER23H 12'hc97	
+`define MHPMCOUNTER17 12'hb11	
+`define MHPMCOUNTER18 12'hb12	
+`define MHPMCOUNTER19 12'hb13	
+`define MHPMCOUNTER20 12'hb14	
+`define MHPMCOUNTER21 12'hb15	
+`define MHPMCOUNTER22 12'hb16	
+`define MHPMCOUNTER23 12'hb17	
+`define MHPMCOUNTER17H 12'hb91	
+`define MHPMCOUNTER18H 12'hb92	
+`define MHPMCOUNTER19H 12'hb93	
+`define MHPMCOUNTER20H 12'hb94	
+`define MHPMCOUNTER21H 12'hb95	
+`define MHPMCOUNTER22H 12'hb96	
+`define MHPMCOUNTER23H 12'hb97	
+`define MHPMEVENT17 12'h331	
+`define MHPMEVENT18 12'h332	
+`define MHPMEVENT19 12'h333	
+`define MHPMEVENT20 12'h334	
+`define MHPMEVENT21 12'h335	
+`define MHPMEVENT22 12'h336	
+`define MHPMEVENT23 12'h337
+
+`define grp6_size 35
+////////////////////////////////////////////////////////////////////////	
+
+////////////////////////////group-7/////////////////////////////////////
+`define HPMCOUNTER24 12'hc18	
+`define HPMCOUNTER25 12'hc19	
+`define HPMCOUNTER26 12'hc1a	
+`define HPMCOUNTER27 12'hc1b	
+`define HPMCOUNTER28 12'hc1c	
+`define HPMCOUNTER29 12'hc1d	
+`define HPMCOUNTER30 12'hc1e	
+`define HPMCOUNTER31 12'hc1f	
+`define HPMCOUNTER24H 12'hc98	
+`define HPMCOUNTER25H 12'hc99	
+`define HPMCOUNTER26H 12'hc9a	
+`define HPMCOUNTER27H 12'hc9b	
+`define HPMCOUNTER28H 12'hc9c	
+`define HPMCOUNTER29H 12'hc9d	
+`define HPMCOUNTER30H 12'hc9e	
+`define HPMCOUNTER31H 12'hc9f	
+`define MHPMCOUNTER24 12'hb18	
+`define MHPMCOUNTER25 12'hb19	
+`define MHPMCOUNTER26 12'hb1a	
+`define MHPMCOUNTER27 12'hb1b	
+`define MHPMCOUNTER28 12'hb1c	
+`define MHPMCOUNTER29 12'hb1d	
+`define MHPMCOUNTER30 12'hb1e	
+`define MHPMCOUNTER31 12'hb1f	
+`define MHPMCOUNTER24H 12'hb98	
+`define MHPMCOUNTER25H 12'hb99	
+`define MHPMCOUNTER26H 12'hb9a	
+`define MHPMCOUNTER27H 12'hb9b	
+`define MHPMCOUNTER28H 12'hb9c	
+`define MHPMCOUNTER29H 12'hb9d	
+`define MHPMCOUNTER30H 12'hb9e	
+`define MHPMCOUNTER31H 12'hb9f	
+`define MHPMEVENT24 12'h338	
+`define MHPMEVENT25 12'h339	
+`define MHPMEVENT26 12'h33a	
+`define MHPMEVENT27 12'h33b	
+`define MHPMEVENT28 12'h33c	
+`define MHPMEVENT29 12'h33d	
+`define MHPMEVENT30 12'h33e	
+`define MHPMEVENT31 12'h33f	
+
+`define grp7_size 40
+////////////////////////////////////////////////////////////////////////

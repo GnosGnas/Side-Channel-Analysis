@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Dec  4 16:44:21 2021
+# Process ID: 34465
+# Current directory: /home/surya/Desktop/sem_5/Diff-power-analysis/vighnesh/cclass/c-class/fpga/project_1.runs/synth_1
+# Command line: vivado -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: /home/surya/Desktop/sem_5/Diff-power-analysis/vighnesh/cclass/c-class/fpga/project_1.runs/synth_1/Top.vds
+# Journal file: /home/surya/Desktop/sem_5/Diff-power-analysis/vighnesh/cclass/c-class/fpga/project_1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace
