@@ -6,6 +6,7 @@ For emulation based TVLA, we have to emulate the targetted hardware on an FPGA a
 More details can be found below
 1. AES-with-wrapper - Contains files used for Mini Project. A wrapper module is used to feed the inputs
 2. Shakti_C-Class - Contains Shakti's C-Class with memory mapped AES accelerator.
+3. TVLA_scripts - Contains two versions of python script to compute t-value
 
 ## Introduction
 Advanced Encryption Standard, or AES, is a popular symmetric algorithm for encryption. It has been a replacement for DES algorithm which failed to protect data due to its small key. The features of AES are as follows:
@@ -58,3 +59,12 @@ This is the most practical way of testing as it involves a processor too. C code
 1. Evaluation of an accelerator in a practical scenario
 2. If a user wants to simply test if the results are as expected, only a C code needs to be written for all the cipher processes.
 3. If the FPGA is configured once then only the hex file of the C code needs to be loaded for each test which happens very quickly
+
+## TVLA scripts
+Two python codes are present in this subdirectory:
+- TVLA_basic.py
+- TVLA_threaded.py
+
+TVLA_threaded.py uses multithreading and reduction parallelism to speedup the computation. More details can be found in the report.
+
+TVLA results are available in the subdirectory Report.
