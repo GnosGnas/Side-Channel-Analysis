@@ -1,5 +1,5 @@
 # Side-Channel-Analysis
-####// More updates to be added
+More updates to be added
 
 ### Aim of the project:
 To evaluate Shakti's AES accelerators using *Test Vector Leakage Assessment*. Other experiments were also performed and are part of this repository. The project related work can be found in Emulation-based-TVLA/AES-with-wrapper.
