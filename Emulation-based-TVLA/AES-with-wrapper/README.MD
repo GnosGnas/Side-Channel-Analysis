@@ -16,7 +16,10 @@ This directory contains the files related to typical AES accelerator. Four confi
 
 These four configurations have been evaluated and results can be found in the report. Wrapper1 and Wrapper2 are modules which feed the inputs to the accelerator and also set the trigger. 
 
-///Picture here
+**Wrapper1**  
+![wrapper1](https://user-images.githubusercontent.com/69968227/167641091-8f899617-a3a2-4aef-b546-2413d8e65d52.png)  
+**Wrapper2**  
+![wrapper2](https://user-images.githubusercontent.com/69968227/167641171-68bee5cc-a1ba-4b22-8233-73e163d802c8.jpg)  
 
 ### Threshold AES
 This directory contains the files related to Threshold Implementation of AES accelerator. Here only the wrapper module can be configured between Wrapper1 and Wrapper2. For this project, we evaluated the accelerator directly using Wrapper2 as it performed better than Wrapper1 from our previous analysis of Normal AES implementation. Results of the evaluation can be found in the report.
