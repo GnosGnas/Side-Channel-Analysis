@@ -242,7 +242,7 @@ module mkAES_Wrapper2 (Wrapper_ifc);
 
 
 	// Getting output from the accelerator
-	rule process2_complete (mod_state == Output_store);
+	rule process2_complete ((mod_state == Output_store) && (counter < n_inputs));
 		let res <- aes_.ret();
 		result_fix <= res;
 
