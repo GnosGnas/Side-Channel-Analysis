@@ -122,7 +122,7 @@ module mkAES_Wrapper1 (Wrapper_ifc);
 	
 	
 	// Getting output from the accelerator
-	rule process_complete (mod_state == Output_store);
+	rule process_complete ((mod_state == Output_store) && (counter < n_inputs));
 		let res <- aes_.ret();	
 		if (decrypt_bool) $display($time, " Output of decryption: %h", res);
 		else $display($time, " Output of encryption: %h", res);
