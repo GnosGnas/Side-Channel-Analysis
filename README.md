@@ -69,9 +69,3 @@ set_property BITSTREAM.General.UnconstrainedPins {Allow} [current_design]
 ## AES algo for both encryption and decryption:
 http://www.cs.columbia.edu/~sedwards/classes/2008/4840/reports/AES.pdf
 
-## Cheatsheet
-![image](https://user-images.githubusercontent.com/69968227/137715095-c2adbb85-c0c9-4c8b-b8ac-0464e0d76cb2.png)
-
-https://towardsdatascience.com/stop-using-csvs-for-storage-pickle-is-an-80-times-faster-alternative-832041bbc199
-
-https://www.rambus.com/wp-content/uploads/2015/08/TVLA-DTR-with-AES.pdf
